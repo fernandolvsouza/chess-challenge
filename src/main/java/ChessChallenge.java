@@ -1,37 +1,71 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 /**
  * Created by flvs on 5/29/16.
  */
 public class ChessChallenge {
 
-    private Node root;
-    private int M,N;
-    private int[] input = new int[5];
+    private int M, N;
 
-    class Node<Item>{
-        private Item item;
-        private Item next;
-    }
+    static final int KING = 1;
+    static final int QUEEN = 2;
+    static final int BISHOP = 3;
+    static final int ROOT = 4;
+    static final int KNIGHT = 5;
+    private Stack<ChessBoard> result;
+    private List<Integer> pieces;
 
-    public ChessChallenge(int M, int N, int king, int queen, int bishop, int rook, int knight){
+    public ChessChallenge(int M, int N, int king, int queen, int bishop, int rook, int knight) {
 
         this.M = M;
         this.N = N;
 
-        this.input[0] = king;
-        this.input[1] = queen;
-        this.input[2] = bishop;
-        this.input[3] = rook;
-        this.input[4] = knight;
+        int[] count = new int[6];
+        count[KING] = king;
+        count[QUEEN] = queen;
+        count[BISHOP] = bishop;
+        count[ROOT] = rook;
+        count[KNIGHT] = knight;
+
+        this.result = new Stack<ChessBoard>();
+        this.pieces = new ArrayList<Integer>(king + queen + bishop + rook + knight);
+
+        for (int i = 1; i < count.length; i++)
+            for (int j = 0; j < count[i]; j++)
+                pieces.add(i);
 
     }
 
-    public int solve(){
-        return 0;
+    public int solve() {
+
+        ChessBoard first = new ChessBoard(this.M, this.N, pieces);
+
+        Stack<ChessBoard> s = new Stack<ChessBoard>();
+        s.push(first);
+
+        while (!s.isEmpty()) {
+            ChessBoard current = s.pop();
+
+            if (current.finished()) {
+                result.push(current);
+                continue;
+            }
+
+            List<ChessBoard> nextBoards = current.nextMoves();
+
+            for (ChessBoard b : nextBoards) {
+                s.push(b);
+            }
+        }
+
+        return result.size();
     }
 
-    public static void main(String[] args) {
-        ChessChallenge c =  new ChessChallenge(5,5,1,0,0,0,0);
-        c.solve();
+    public Stack<ChessBoard> getResult(){
+        return result;
     }
+
 
 }
