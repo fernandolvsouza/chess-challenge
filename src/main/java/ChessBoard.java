@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by flvs on 5/29/16.
@@ -9,146 +11,40 @@ public class ChessBoard {
     private int M, N;
 
     private int[][] position;
-    private boolean[] atLeastOnePieceInLine;
-    private boolean[] atLeastOnePieceInColumn;
 
-    private boolean[][] positionsTreated;
-    private boolean[] lineTreated;
-    private boolean[] columnTreated;
+    private int[][] positionsTreated;
 
     private int pieceIndex = 0;
 
     private List<Integer> pieces;
+    private Placement current;
 
 
     public ChessBoard(int M, int N, List<Integer> pieces) {
         this.M = M;
         this.N = N;
         this.pieces = pieces;
-
-        this.positionsTreated = new boolean[M][N];
+        this.positionsTreated = new int[M][N];
         this.position = new int[M][N];
-
-        atLeastOnePieceInLine =  new boolean[M];
-        atLeastOnePieceInColumn = new boolean[N];
-        lineTreated = new boolean[M];
-        columnTreated =  new boolean[N];
 
         for (int m = 0; m < M; m++)
             for (int n = 0; n < N; n++)
-                positionsTreated[m][n] = false;
+                positionsTreated[m][n] = 0;
 
         for (int m = 0; m < M; m++)
             for (int n = 0; n < N; n++)
                 position[m][n] = 0;
 
-        for (int m = 0; m < M; m++) {
-            atLeastOnePieceInLine[m] = false;
-            lineTreated[m] = false;
-        }
-
-        for (int n = 0; n < N; n++) {
-            atLeastOnePieceInColumn[n] = false;
-            columnTreated[n] = false;
-        }
-    }
-
-    public List<ChessBoard> nextMoves() {
-        List<ChessBoard> newBoards = new ArrayList<ChessBoard>();
-
-        for (int m = 0; m < M; m++)
-            for (int n = 0; n < N; n++)
-                if (isPositionTreated(m, n)) {
-                    ChessBoard b = null;
-                    switch (pieces.get(pieceIndex)) {
-                        case ChessChallenge.KING:
-                            b = addKing(m, n);
-                            break;
-                        case ChessChallenge.QUEEN:
-                            b = addQueen(m, n);
-                            break;
-                        case ChessChallenge.ROOT:
-                            b = addRoot(m, n);
-                            break;
-                        case ChessChallenge.KNIGHT:
-                            b = addKnight(m, n);
-                            break;
-                        case ChessChallenge.BISHOP:
-                            b = addBishop(m, n);
-                            break;
-                        default:
-                            throw new IllegalArgumentException();
-                    }
-
-                    if (b != null)
-                        newBoards.add(b);
-                }
-
-        return newBoards;
-    }
-
-    private ChessBoard addBishop(int m, int n) {
-        ChessBoard c = cloneBoard();
-
-        return null;
-    }
-
-    private ChessBoard addKnight(int m, int n) {
-        return null;
-    }
-
-    private ChessBoard addRoot(int m, int n) {
-        return null;
-    }
-
-    private ChessBoard addQueen(int m, int n) {
-        return null;
-    }
-
-    private ChessBoard addKing(int m, int n) {
-        if (!isLineTreated(m)
-                && !isColumnTreated(n)
-                && isPositionEmptyOrOutOfBound(m - 1, n)
-                && isPositionEmptyOrOutOfBound(m, n - 1)
-                && isPositionEmptyOrOutOfBound(m - 1, n - 1)
-                && isPositionEmptyOrOutOfBound(m, n + 1)
-                && isPositionEmptyOrOutOfBound(m + 1, n + 1)
-                && isPositionEmptyOrOutOfBound(m - 1, n + 1)
-                && isPositionEmptyOrOutOfBound(m + 1, n - 1)) {
-
-            ChessBoard c = cloneBoard();
-            c.pieceIndex = pieceIndex + 1;
-            c.atLeastOnePieceInLine[m] = true;
-            c.atLeastOnePieceInColumn[n] = true;
-            c.positionsTreated[m][n] = true;
-            c.position[m][n] = ChessChallenge.KING;
-
-            c.markPositionAsTreated(m, n + 1);
-            c.markPositionAsTreated(m, n - 1);
-            c.markPositionAsTreated(m - 1, n);
-            c.markPositionAsTreated(m - 1, n - 1);
-            c.markPositionAsTreated(m - 1, n + 1);
-            c.markPositionAsTreated(m + 1, n);
-            c.markPositionAsTreated(m + 1, n + 1);
-            c.markPositionAsTreated(m + 1, n - 1);
-
-            return c;
-        }
-
-        return null;
-    }
-
-    private boolean isColumnTreated(int n) {
-        return this.columnTreated[n];
-    }
-
-    private boolean isLineTreated(int m) {
-        return this.lineTreated[m];
     }
 
     private void markPositionAsTreated(int m, int n) {
         if (inBound(m, n))
-            positionsTreated[m][n] = true;
+            positionsTreated[m][n] ++;
+    }
+
+    private void unMarkPositionAsTreated(int m, int n) {
+        if (inBound(m, n))
+            positionsTreated[m][n] --;
     }
 
     private boolean isPositionEmptyOrOutOfBound(int m, int n) {
@@ -163,14 +59,14 @@ public class ChessBoard {
     }
 
     private boolean isPositionTreated(int m, int n) {
-        return positionsTreated[m][n] == false;
+        return positionsTreated[m][n] > 0;
     }
 
     private boolean isPositionEmpty(int m, int n) {
         return position[m][n] == 0;
     }
 
-    private ChessBoard cloneBoard() {
+    public ChessBoard cloneBoard() {
 
         ChessBoard clone = new ChessBoard(this.M, this.N,this.pieces);
 
@@ -181,18 +77,6 @@ public class ChessBoard {
         for (int m = 0; m < M; m++)
             for (int n = 0; n < N; n++)
                 clone.positionsTreated[m][n] = positionsTreated[m][n];
-
-        for (int m = 0; m < M; m++)
-            clone.atLeastOnePieceInLine[m] = atLeastOnePieceInLine[m];
-
-        for (int n = 0; n < M; n++)
-            clone.atLeastOnePieceInColumn[n] = atLeastOnePieceInColumn[n];
-
-        for (int m = 0; m < M; m++)
-            clone.lineTreated[m] = lineTreated[m];
-
-        for (int n = 0; n < M; n++)
-            clone.columnTreated[n] = columnTreated[n];
 
         return clone;
     }
@@ -210,7 +94,94 @@ public class ChessBoard {
         return b.toString();
     }
 
-    public boolean finished() {
+    public boolean isComplete() {
         return this.pieces.size()  == pieceIndex;
     }
+
+    public List<Placement> possibleMoves() {
+        List<Placement> placements = new ArrayList<Placement>();
+
+        for (int m = 0 ; m < M; m++)
+            for (int n = 0; n < N; n++)
+                if (isPositionGreaterThen(m,n,current) &&  !isPositionTreated(m, n)) {
+                    Placement p = createMoveIfPossible(pieces.get(pieceIndex), m, n);
+                    if(p != null){//(!nextPlacements.containsKey(p) || !nextPlacements.get(p).contains(current))){
+                        placements.add(p);
+                    }
+                }
+
+        return placements;
+    }
+
+    private boolean isPositionGreaterThen(int m, int n, Placement p) {
+        int order = m * N + n;
+        int c_order = p == null ? 0 : p.m * N + p.n;
+        return order >= c_order;
+    }
+
+    private Placement createMoveIfPossible(int piece, int m, int n) {
+        Placement p = null;
+        if (isPositionEmptyOrOutOfBound(m - 1, n)
+                && isPositionEmptyOrOutOfBound(m, n - 1)
+                && isPositionEmptyOrOutOfBound(m - 1, n - 1)
+                && isPositionEmptyOrOutOfBound(m, n + 1)
+                && isPositionEmptyOrOutOfBound(m + 1, n + 1)
+                && isPositionEmptyOrOutOfBound(m - 1, n + 1)
+                && isPositionEmptyOrOutOfBound(m + 1, n - 1)) {
+
+            p = new Placement();
+            p.m = m;
+            p.n = n;
+            p.piece = piece;
+
+        }
+        return p;
+    }
+
+    public void putPiece(Placement placement) {
+        
+        int m = placement.m;
+        int n = placement.n;
+
+        pieceIndex ++;
+        positionsTreated[m][n] ++;
+        position[m][n] = ChessChallenge.KING;
+
+        markPositionAsTreated(m, n + 1);
+        markPositionAsTreated(m, n - 1);
+        markPositionAsTreated(m - 1, n);
+        markPositionAsTreated(m - 1, n - 1);
+        markPositionAsTreated(m - 1, n + 1);
+        markPositionAsTreated(m + 1, n);
+        markPositionAsTreated(m + 1, n + 1);
+        markPositionAsTreated(m + 1, n - 1);
+
+        placement.from = current;
+        current = placement;
+
+    }
+
+    public void removePiece(Placement placement) {
+
+        int m = placement.m;
+        int n = placement.n;
+
+        pieceIndex --;
+        positionsTreated[m][n] --;
+        position[m][n] = 0;
+
+        unMarkPositionAsTreated(m, n + 1);
+        unMarkPositionAsTreated(m, n - 1);
+        unMarkPositionAsTreated(m - 1, n);
+        unMarkPositionAsTreated(m - 1, n - 1);
+        unMarkPositionAsTreated(m - 1, n + 1);
+        unMarkPositionAsTreated(m + 1, n);
+        unMarkPositionAsTreated(m + 1, n + 1);
+        unMarkPositionAsTreated(m + 1, n - 1);
+
+        Placement aux = placement.from;
+        current = aux;
+        placement.from = null;
+    }
+
 }

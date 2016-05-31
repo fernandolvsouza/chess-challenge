@@ -19,6 +19,20 @@ class ChessChallengeSpec extends Specification {
         c.solve() == 9
     }
 
+    def "test 7x7 , 15 Kings"() {
+        setup:
+        ChessChallenge c  = new ChessChallenge(7,7,15,0,0,0,0)
+        expect:
+        c.solve() == 64
+    }
+
+    def "test 7x7 , 16 Kings"() {
+        setup:
+        ChessChallenge c  = new ChessChallenge(7,7,16,0,0,0,0)
+        expect:
+        c.solve() == 1
+    }
+
     def "test 7x7 , 2 Kings"() {
         setup:
         ChessChallenge c  = new ChessChallenge(7,7,2,0,0,0,0)
@@ -26,11 +40,12 @@ class ChessChallengeSpec extends Specification {
         c.solve() == 90
     }
 
+
     def "test 3x3 , 3 Kings"() {
         setup:
         ChessChallenge c  = new ChessChallenge(3,3,3,0,0,0,0)
         expect:
-        c.solve() == 4
+        c.solve() == 8
 
     }
 

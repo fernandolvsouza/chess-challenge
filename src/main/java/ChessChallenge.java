@@ -7,20 +7,16 @@ import java.util.Stack;
  */
 public class ChessChallenge {
 
-    private int M, N;
-
     static final int KING = 1;
     static final int QUEEN = 2;
     static final int BISHOP = 3;
     static final int ROOT = 4;
     static final int KNIGHT = 5;
+
     private Stack<ChessBoard> result;
-    private List<Integer> pieces;
+    private ChessBoard  board;
 
     public ChessChallenge(int M, int N, int king, int queen, int bishop, int rook, int knight) {
-
-        this.M = M;
-        this.N = N;
 
         int[] count = new int[6];
         count[KING] = king;
@@ -30,37 +26,39 @@ public class ChessChallenge {
         count[KNIGHT] = knight;
 
         this.result = new Stack<ChessBoard>();
-        this.pieces = new ArrayList<Integer>(king + queen + bishop + rook + knight);
+        List<Integer> pieces = new ArrayList<Integer>(king + queen + bishop + rook + knight);
 
         for (int i = 1; i < count.length; i++)
             for (int j = 0; j < count[i]; j++)
                 pieces.add(i);
 
+        board = new ChessBoard(M,N,pieces);
+
     }
 
     public int solve() {
+        search(board);
+        return result.size();
+    }
 
-        ChessBoard first = new ChessBoard(this.M, this.N, pieces);
+    private void search( ChessBoard board ){
 
-        Stack<ChessBoard> s = new Stack<ChessBoard>();
-        s.push(first);
 
-        while (!s.isEmpty()) {
-            ChessBoard current = s.pop();
-
-            if (current.finished()) {
-                result.push(current);
-                continue;
-            }
-
-            List<ChessBoard> nextBoards = current.nextMoves();
-
-            for (ChessBoard b : nextBoards) {
-                s.push(b);
-            }
+        if(board.isComplete()) {
+            result.push(board.cloneBoard());
+            //System.out.println(board.toString());
+            //System.out.print(board.isComplete() + "\n\n");
+            return;
         }
 
-        return result.size();
+
+        List<Placement> placements = board.possibleMoves();
+
+        for (Placement placement : placements){
+            board.putPiece(placement);
+            search( board );
+            board.removePiece(placement);
+        }
     }
 
     public Stack<ChessBoard> getResult(){
