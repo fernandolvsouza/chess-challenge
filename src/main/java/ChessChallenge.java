@@ -44,8 +44,9 @@ public class ChessChallenge {
     }
 
     private void search( ChessBoard board ){
-        //System.out.println(board.toString());
+
         if(board.isComplete()) {
+            System.out.println(board.toString());
             //System.out.print(board.isComplete() + "\n\n");
             result.push(board.cloneBoard());
             return;

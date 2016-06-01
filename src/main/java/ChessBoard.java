@@ -186,7 +186,7 @@ public class ChessBoard {
         return order >= c_order;
     }
 
-    private int order(int m, int n) {
+    /*private int order(int m, int n) {
         return m * N + n;
     }
 
@@ -204,7 +204,7 @@ public class ChessBoard {
         int next_n = order % N;
 
         return new Position(next_m,next_n);
-    }
+    }*/
 
     private boolean canPlace(Placement p) {//int piece, int m, int n) {
         int m = p.position.m;
