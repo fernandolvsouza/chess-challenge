@@ -7,6 +7,7 @@ import java.util.Stack;
  */
 public class ChessChallenge {
 
+    static final int EMPTY = 0;
     static final int KING = 1;
     static final int QUEEN = 2;
     static final int BISHOP = 3;
@@ -15,6 +16,7 @@ public class ChessChallenge {
 
     private Stack<ChessBoard> result;
     private ChessBoard  board;
+
 
     public ChessChallenge(int M, int N, int king, int queen, int bishop, int rook, int knight) {
 
@@ -42,19 +44,17 @@ public class ChessChallenge {
     }
 
     private void search( ChessBoard board ){
-
-
+        //System.out.println(board.toString());
         if(board.isComplete()) {
-            result.push(board.cloneBoard());
-            //System.out.println(board.toString());
             //System.out.print(board.isComplete() + "\n\n");
+            result.push(board.cloneBoard());
             return;
         }
 
 
         List<Placement> placements = board.possibleMoves();
-
         for (Placement placement : placements){
+
             board.putPiece(placement);
             search( board );
             board.removePiece(placement);

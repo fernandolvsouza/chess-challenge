@@ -32,6 +32,11 @@ public class Placement {
         return result;
     }
 
+    @Override
+    public String toString() {
+        return "p [ type: " + piece + ", m : " + position.m + ", n: " + position.n +" ]"  ;
+    }
+
     public Position getPosition() {
         return position;
     }

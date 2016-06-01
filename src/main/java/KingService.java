@@ -3,7 +3,7 @@
  */
 public class KingService implements PieceService{
     public Position[] getThreatenedPositions(Position piecePos) {
-        Position[] positions = new Position[9];
+        Position[] positions = new Position[8];
 
         positions[0] = new Position(piecePos.m, piecePos.n + 1);
         positions[1] = new Position(piecePos.m, piecePos.n - 1);
@@ -13,7 +13,7 @@ public class KingService implements PieceService{
         positions[5] = new Position(piecePos.m + 1, piecePos.n);
         positions[6] = new Position(piecePos.m + 1, piecePos.n + 1);
         positions[7] = new Position(piecePos.m + 1, piecePos.n - 1);
-        positions[8] = new Position(piecePos.m, piecePos.n);
+
         return positions;
     }
 
@@ -28,5 +28,16 @@ public class KingService implements PieceService{
     @Override
     public int getType() {
         return ChessChallenge.KING;
+    }
+
+    @Override
+    public boolean canPlace(Placement p, ChessBoard chessBoard) {
+        return  chessBoard.isPositionEmptyOrOutOfBound(p.position.m - 1,p.position.n)
+                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m,p.position.n - 1)
+                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m - 1,p.position.n - 1)
+                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m,p.position.n + 1)
+                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m + 1,p.position.n + 1)
+                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m - 1,p.position.n + 1)
+                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m + 1,p.position.n - 1);
     }
 }

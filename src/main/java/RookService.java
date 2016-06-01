@@ -19,4 +19,9 @@ public class RookService implements PieceService{
     public int getType() {
         return ChessChallenge.ROOK;
     }
+
+    @Override
+    public boolean canPlace(Placement p, ChessBoard chessBoard) {
+        return !chessBoard.hasPieceInColumn(p.position.n) && !chessBoard.hasPieceInLine(p.position.m);
+    }
 }
