@@ -1,7 +1,5 @@
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by flvs on 5/29/16.
@@ -18,6 +16,8 @@ public class ChessBoard {
 
     private List<Integer> pieces;
     private Placement current;
+    private int[] threatenedLines;
+    private int[] threatenedColumns;
 
 
     public ChessBoard(int M, int N, List<Integer> pieces) {
@@ -26,6 +26,9 @@ public class ChessBoard {
         this.pieces = pieces;
         this.positionsTreated = new int[M][N];
         this.position = new int[M][N];
+        this.threatenedLines = new int[M];
+        this.threatenedColumns = new int[N];
+
 
         for (int m = 0; m < M; m++)
             for (int n = 0; n < N; n++)
@@ -42,9 +45,17 @@ public class ChessBoard {
             positionsTreated[m][n] ++;
     }
 
+    private void markPositionAsTreated(Position p ) {
+        markPositionAsTreated(p.m,p.n);
+    }
+
     private void unMarkPositionAsTreated(int m, int n) {
         if (inBound(m, n))
             positionsTreated[m][n] --;
+    }
+
+    private void unMarkPositionAsTreated(Position p) {
+        unMarkPositionAsTreated(p.m,p.n);
     }
 
     private boolean isPositionEmptyOrOutOfBound(int m, int n) {
@@ -104,8 +115,8 @@ public class ChessBoard {
         for (int m = 0 ; m < M; m++)
             for (int n = 0; n < N; n++)
                 if (isPositionGreaterThen(m,n,current) &&  !isPositionTreated(m, n)) {
-                    Placement p = createMoveIfPossible(pieces.get(pieceIndex), m, n);
-                    if(p != null){//(!nextPlacements.containsKey(p) || !nextPlacements.get(p).contains(current))){
+                    Placement p = canPut(pieces.get(pieceIndex), m, n);
+                    if(p != null){
                         placements.add(p);
                     }
                 }
@@ -115,11 +126,11 @@ public class ChessBoard {
 
     private boolean isPositionGreaterThen(int m, int n, Placement p) {
         int order = m * N + n;
-        int c_order = p == null ? 0 : p.m * N + p.n;
+        int c_order = p == null ? 0 : p.getPosition().m * N + p.getPosition().n;
         return order >= c_order;
     }
 
-    private Placement createMoveIfPossible(int piece, int m, int n) {
+    private Placement canPut(int piece, int m, int n) {
         Placement p = null;
         if (isPositionEmptyOrOutOfBound(m - 1, n)
                 && isPositionEmptyOrOutOfBound(m, n - 1)
@@ -129,32 +140,34 @@ public class ChessBoard {
                 && isPositionEmptyOrOutOfBound(m - 1, n + 1)
                 && isPositionEmptyOrOutOfBound(m + 1, n - 1)) {
 
-            p = new Placement();
-            p.m = m;
-            p.n = n;
-            p.piece = piece;
+            p = new Placement(m,n,piece);
 
         }
         return p;
     }
 
     public void putPiece(Placement placement) {
-        
-        int m = placement.m;
-        int n = placement.n;
+        PieceService service = new KingService();
+        Position piecePos = placement.getPosition();
 
         pieceIndex ++;
-        positionsTreated[m][n] ++;
-        position[m][n] = ChessChallenge.KING;
+        position[piecePos.m][piecePos.n] = service.getType();
 
-        markPositionAsTreated(m, n + 1);
-        markPositionAsTreated(m, n - 1);
-        markPositionAsTreated(m - 1, n);
-        markPositionAsTreated(m - 1, n - 1);
-        markPositionAsTreated(m - 1, n + 1);
-        markPositionAsTreated(m + 1, n);
-        markPositionAsTreated(m + 1, n + 1);
-        markPositionAsTreated(m + 1, n - 1);
+        Position[] threatenedPositions = service.getThreatenedPositions(piecePos);
+        int[] threatenedLines = service.getThreatenedLines(piecePos);
+        int[] threatenedColumns = service.getThreatenedColumns(piecePos);
+
+        for (Position p : threatenedPositions) {
+            markPositionAsTreated(p);
+        }
+
+        for (int  l : threatenedLines) {
+            this.threatenedLines[l] ++;
+        }
+
+        for (int  c : threatenedColumns) {
+            this.threatenedColumns[c] ++;
+        }
 
         placement.from = current;
         current = placement;
@@ -162,22 +175,27 @@ public class ChessBoard {
     }
 
     public void removePiece(Placement placement) {
-
-        int m = placement.m;
-        int n = placement.n;
+        PieceService service = new KingService();
+        Position piecePos = placement.getPosition();
 
         pieceIndex --;
-        positionsTreated[m][n] --;
-        position[m][n] = 0;
+        position[piecePos.m][piecePos.n] = 0;
 
-        unMarkPositionAsTreated(m, n + 1);
-        unMarkPositionAsTreated(m, n - 1);
-        unMarkPositionAsTreated(m - 1, n);
-        unMarkPositionAsTreated(m - 1, n - 1);
-        unMarkPositionAsTreated(m - 1, n + 1);
-        unMarkPositionAsTreated(m + 1, n);
-        unMarkPositionAsTreated(m + 1, n + 1);
-        unMarkPositionAsTreated(m + 1, n - 1);
+        Position[] threatenedPositions = service.getThreatenedPositions(piecePos);
+        int[] threatenedLines = service.getThreatenedLines(piecePos);
+        int[] threatenedColumns = service.getThreatenedColumns(piecePos);
+
+        for (Position p : threatenedPositions) {
+            unMarkPositionAsTreated(p);
+        }
+
+        for (int  l : threatenedLines) {
+            this.threatenedLines[l] --;
+        }
+
+        for (int  c : threatenedColumns) {
+            this.threatenedColumns[c] --;
+        }
 
         Placement aux = placement.from;
         current = aux;

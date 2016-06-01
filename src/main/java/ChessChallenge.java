@@ -10,7 +10,7 @@ public class ChessChallenge {
     static final int KING = 1;
     static final int QUEEN = 2;
     static final int BISHOP = 3;
-    static final int ROOT = 4;
+    static final int ROOK = 4;
     static final int KNIGHT = 5;
 
     private Stack<ChessBoard> result;
@@ -22,7 +22,7 @@ public class ChessChallenge {
         count[KING] = king;
         count[QUEEN] = queen;
         count[BISHOP] = bishop;
-        count[ROOT] = rook;
+        count[ROOK] = rook;
         count[KNIGHT] = knight;
 
         this.result = new Stack<ChessBoard>();
