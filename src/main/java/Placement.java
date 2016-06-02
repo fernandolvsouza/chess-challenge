@@ -5,6 +5,7 @@ public class Placement {
     int piece ;
     Placement from ;
     Position position;
+    public ChessBoard board;
 
     public Placement(int m, int n, int piece) {
         position = new Position(m,n);

@@ -30,7 +30,7 @@ public class KingService implements PieceService{
     }
 
     public int getType() {
-        return ChessChallenge.KING;
+        return ChessChallengeBackTracking.KING;
     }
 
     public boolean canPlace(Placement p, ChessBoard chessBoard) {

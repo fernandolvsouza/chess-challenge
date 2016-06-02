@@ -201,7 +201,7 @@ public class ChessBoard {
     /**
      * Method that calculate the next moves
      */
-    public List<Placement> possibleMoves() {
+    public List<Placement> possibleMoves(boolean cloneBoard) {
         List<Placement> placements = new ArrayList<Placement>();
         int nextPiece = pieces.get(pieceIndex);
         int start = 0;
@@ -301,4 +301,19 @@ public class ChessBoard {
         placement.from = null;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ChessBoard that = (ChessBoard) o;
+
+        return Arrays.equals(position, that.position);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(position);
+    }
 }

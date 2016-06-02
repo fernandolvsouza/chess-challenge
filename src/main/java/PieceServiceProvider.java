@@ -10,15 +10,15 @@ public class PieceServiceProvider {
     private static QueenService queenService = new QueenService();
 
     public static PieceService getService( int type){
-        if(type == ChessChallenge.KING)
+        if(type == ChessChallengeBackTracking.KING)
             return kingService;
-        if(type == ChessChallenge.ROOK)
+        if(type == ChessChallengeBackTracking.ROOK)
             return rookservice;
-        if(type == ChessChallenge.KNIGHT)
+        if(type == ChessChallengeBackTracking.KNIGHT)
             return knightService;
-        if(type == ChessChallenge.BISHOP)
+        if(type == ChessChallengeBackTracking.BISHOP)
             return bishopService;
-        if(type == ChessChallenge.QUEEN)
+        if(type == ChessChallengeBackTracking.QUEEN)
             return queenService;
         throw new IllegalArgumentException();
     }

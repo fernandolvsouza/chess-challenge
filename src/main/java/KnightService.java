@@ -28,7 +28,7 @@ public class KnightService implements PieceService{
     }
 
     public int getType() {
-        return ChessChallenge.KNIGHT;
+        return ChessChallengeBackTracking.KNIGHT;
     }
 
     public boolean canPlace(Placement p, ChessBoard chessBoard) {

@@ -21,7 +21,7 @@ public class BishopService implements PieceService{
     }
 
     public int getType() {
-        return ChessChallenge.BISHOP;
+        return ChessChallengeBackTracking.BISHOP;
     }
 
     public boolean canPlace(Placement p, ChessBoard chessBoard) {

@@ -20,7 +20,7 @@ public class RookService implements PieceService{
     }
 
     public int getType() {
-        return ChessChallenge.ROOK;
+        return ChessChallengeBackTracking.ROOK;
     }
 
     public boolean canPlace(Placement p, ChessBoard chessBoard) {

@@ -21,7 +21,7 @@ public class QueenService implements PieceService{
     }
 
     public int getType() {
-        return ChessChallenge.QUEEN;
+        return ChessChallengeBackTracking.QUEEN;
     }
 
     public boolean canPlace(Placement p, ChessBoard chessBoard) {
