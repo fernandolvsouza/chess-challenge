@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -20,6 +21,10 @@ public class ChessBoard {
     private int[] threatenedColumns;
     private int[] piecesInLine;
     private int[] piecesInColumn;
+    private int[] threatenedDiagonalBottomUp;
+    private int[] threatenedDiagonalUpBottom;
+    private int[] piecesInDiagonalBottomUp;
+    private int[] piecesInDiagonalUpBottom;
 
     public ChessBoard(int M, int N, List<Integer> pieces) {
         this.M = M;
@@ -31,7 +36,10 @@ public class ChessBoard {
         this.threatenedColumns = new int[N];
         this.piecesInLine = new int[M];
         this.piecesInColumn = new int[N];
-
+        this.piecesInDiagonalBottomUp = new int[M+N-1];
+        this.piecesInDiagonalUpBottom = new int[M+N-1];
+        this.threatenedDiagonalBottomUp = new int[M+N-1];
+        this.threatenedDiagonalUpBottom = new int[M+N-1];
 
         for (int m = 0; m < M; m++)
             for (int n = 0; n < N; n++)
@@ -49,6 +57,13 @@ public class ChessBoard {
         for (int n = 0; n < N; n++){
             this.threatenedColumns[n] = 0;
             this.piecesInColumn[n] = 0;
+        }
+
+        for (int d = 0; d < M + N - 1; d++) {
+            this.piecesInDiagonalBottomUp[d] = 0;
+            this.piecesInDiagonalUpBottom[d] = 0;
+            this.threatenedDiagonalBottomUp[d] = 0;
+            this.threatenedDiagonalUpBottom[d] = 0;
         }
 
 
@@ -73,6 +88,16 @@ public class ChessBoard {
 
     private void unMarkPositionAsThreatened(Position p) {
         unMarkPositionAsThreatened(p.m,p.n);
+    }
+
+    private void markDiagonalAsThreatened(Position position){
+        piecesInDiagonalBottomUp[ position.m + position.n ] ++;
+        piecesInDiagonalUpBottom[ position.m - position.n + M -1] ++;
+    }
+
+    private void unMarkDiagonalAsThreatened(Position position){
+        piecesInDiagonalBottomUp[ position.m + position.n ] --;
+        piecesInDiagonalUpBottom[ position.m - position.n + M -1] --;
     }
 
 
@@ -106,6 +131,7 @@ public class ChessBoard {
     private boolean isLineThreatened(int m) {
         return threatenedLines[m] > 0;
     }
+
     public boolean isComplete() {
         return this.pieces.size()  == pieceIndex;
     }
@@ -117,11 +143,23 @@ public class ChessBoard {
     public boolean hasPieceInLine(int m){
         return piecesInLine[m] > 0;
     }
+
     private boolean isPositionThreatened(Position p) {
         return isPositionThreatened(p.m,p.n);
     }
+
     private boolean isPositionThreatened(int m, int n) {
         return positionsThreatened[m][n] > 0;
+    }
+
+    public boolean hasPieceInDiagonals(Position position){
+        return piecesInDiagonalBottomUp[ position.m + position.n ] > 0
+                 || piecesInDiagonalUpBottom[ position.m - position.n + M - 1] > 0;
+    }
+
+    private boolean isAnyDiagonalThreatened(Position position){
+        return threatenedDiagonalBottomUp[ position.m + position.n ] > 0
+                || threatenedDiagonalUpBottom[ position.m-position.n + M - 1 ] > 0;
     }
 
     /**
@@ -186,25 +224,6 @@ public class ChessBoard {
         return order >= c_order;
     }
 
-    /*private int order(int m, int n) {
-        return m * N + n;
-    }
-
-    private Position orderToPosition(int order){
-
-        int next_m = order/N;
-        int next_n = order % N;
-
-        return new Position(next_m,next_n);
-    }
-
-    private Position nextPos(Position p) {
-        int order = p.m * N + p.n + 1;
-        int next_m = order/N;
-        int next_n = order % N;
-
-        return new Position(next_m,next_n);
-    }*/
 
     private boolean canPlace(Placement p) {//int piece, int m, int n) {
         int m = p.position.m;
@@ -221,6 +240,10 @@ public class ChessBoard {
 
         if(isPositionThreatened(p.position))
             return false;
+
+        if(isAnyDiagonalThreatened(p.position))
+            return false;
+
 
         PieceService service = PieceServiceProvider.getService(p.piece);
         return service.canPlace(p,this);
@@ -239,6 +262,7 @@ public class ChessBoard {
         int[] threatenedLines = service.getThreatenedLines(piecePos);
         int[] threatenedColumns = service.getThreatenedColumns(piecePos);
 
+
         for (Position p : threatenedPositions)
             markPositionAsThreatened(p);
 
@@ -247,6 +271,9 @@ public class ChessBoard {
 
         for (int  c : threatenedColumns)
             this.threatenedColumns[c] ++;
+
+        if(service.markDiagonals())
+            markDiagonalAsThreatened(piecePos);
 
         placement.from = current;
         current = placement;
@@ -274,6 +301,9 @@ public class ChessBoard {
 
         for (int  c : threatenedColumns)
             this.threatenedColumns[c] --;
+
+        if(service.markDiagonals())
+            unMarkDiagonalAsThreatened(piecePos);
 
         Placement aux = placement.from;
         current = aux;

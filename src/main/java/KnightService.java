@@ -23,12 +23,14 @@ public class KnightService implements PieceService{
 
     public int[] getThreatenedColumns(Position piecePos) { return new int[0]; }
 
-    @Override
+    public boolean markDiagonals() {
+        return false;
+    }
+
     public int getType() {
         return ChessChallenge.KNIGHT;
     }
 
-    @Override
     public boolean canPlace(Placement p, ChessBoard chessBoard) {
         Position[] positions = getThreatenedPositions(p.getPosition());
         for (Position pos :  positions) {

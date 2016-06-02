@@ -6,6 +6,7 @@ public class PieceServiceProvider {
     private static KingService kingService = new KingService();
     private static RookService rookservice = new RookService();
     private static KnightService knightService = new KnightService();
+    private static BishopService bishopService = new BishopService();
 
     public static PieceService getService( int type){
         if(type == ChessChallenge.KING)
@@ -14,6 +15,8 @@ public class PieceServiceProvider {
             return rookservice;
         if(type == ChessChallenge.KNIGHT)
             return knightService;
+        if(type == ChessChallenge.BISHOP)
+            return bishopService;
         throw new IllegalArgumentException();
     }
 }

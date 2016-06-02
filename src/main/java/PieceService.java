@@ -5,6 +5,7 @@ public interface PieceService {
     Position[] getThreatenedPositions(Position piecePos);
     int[] getThreatenedLines(Position piecePos);
     int[] getThreatenedColumns(Position piecePos);
+    boolean markDiagonals();
     int getType();
     boolean canPlace(Placement p, ChessBoard chessBoard);
 }

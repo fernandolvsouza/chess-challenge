@@ -25,12 +25,14 @@ public class KingService implements PieceService{
         return new int[0];
     }
 
-    @Override
+    public boolean markDiagonals() {
+        return false;
+    }
+
     public int getType() {
         return ChessChallenge.KING;
     }
 
-    @Override
     public boolean canPlace(Placement p, ChessBoard chessBoard) {
         return  chessBoard.isPositionEmptyOrOutOfBound(p.position.m - 1,p.position.n)
                 && chessBoard.isPositionEmptyOrOutOfBound(p.position.m,p.position.n - 1)
