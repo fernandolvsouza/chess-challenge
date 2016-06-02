@@ -11,6 +11,11 @@ public class Placement {
         this.piece = piece;
     }
 
+    public Placement(Position position, int nextPiece) {
+        this.position = position;
+        this.piece = nextPiece;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

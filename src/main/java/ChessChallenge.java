@@ -8,11 +8,11 @@ import java.util.Stack;
 public class ChessChallenge {
 
     static final int EMPTY = 0;
-    static final int KING = 1;
-    static final int QUEEN = 2;
-    static final int BISHOP = 3;
-    static final int ROOK = 4;
-    static final int KNIGHT = 5;
+    static final int KING = 5;
+    static final int QUEEN = 1;
+    static final int BISHOP = 2;
+    static final int ROOK = 3;
+    static final int KNIGHT = 4;
 
     private Stack<ChessBoard> result;
     private ChessBoard  board;
@@ -34,7 +34,7 @@ public class ChessChallenge {
             for (int j = 0; j < count[i]; j++)
                 pieces.add(i);
 
-        board = new ChessBoard(M,N,pieces);
+        board = new ChessBoard(M,N,pieces, new CoordinateTransform(M,N));
 
     }
 
@@ -47,8 +47,8 @@ public class ChessChallenge {
 
 
         if(board.isComplete()) {
-            //System.out.println(board.toString());
-            //System.out.print(board.isComplete() + "\n\n");
+            /*System.out.println(board.toString());
+            System.out.print(board.isComplete() + "\n\n");*/
             result.push(board.cloneBoard());
             return;
         }

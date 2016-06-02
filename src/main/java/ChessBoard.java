@@ -9,9 +9,9 @@ public class ChessBoard {
 
     private int M, N;
 
-    private int[][] position;
+    private int[] position;
 
-    private int[][] positionsThreatened;
+    private int[] positionsThreatened;
 
     private int pieceIndex = 0;
 
@@ -25,13 +25,14 @@ public class ChessBoard {
     private int[] threatenedDiagonalUpBottom;
     private int[] piecesInDiagonalBottomUp;
     private int[] piecesInDiagonalUpBottom;
-
-    public ChessBoard(int M, int N, List<Integer> pieces) {
+    private CoordinateTransform t;
+    public ChessBoard(int M, int N, List<Integer> pieces, CoordinateTransform t) {
+        this.t = t;
         this.M = M;
         this.N = N;
         this.pieces = pieces;
-        this.positionsThreatened = new int[M][N];
-        this.position = new int[M][N];
+        this.positionsThreatened = new int[M*N];
+        this.position = new int[M*N];
         this.threatenedLines = new int[M];
         this.threatenedColumns = new int[N];
         this.piecesInLine = new int[M];
@@ -41,13 +42,11 @@ public class ChessBoard {
         this.threatenedDiagonalBottomUp = new int[M+N-1];
         this.threatenedDiagonalUpBottom = new int[M+N-1];
 
-        for (int m = 0; m < M; m++)
-            for (int n = 0; n < N; n++)
-                positionsThreatened[m][n] = 0;
+        for (int i = 0; i < M*N; i++)
+                positionsThreatened[i] = 0;
 
-        for (int m = 0; m < M; m++)
-            for (int n = 0; n < N; n++)
-                position[m][n] = 0;
+        for (int i = 0; i < M*N; i++)
+                position[i] = 0;
 
         for (int m = 0; m < M; m++){
             threatenedLines[m] = 0;
@@ -72,9 +71,10 @@ public class ChessBoard {
     /**
      * Methods for mark and unmark positions as Threatened
      */
+
     private void markPositionAsThreatened(int m, int n) {
         if (inBound(m, n))
-            positionsThreatened[m][n] ++;
+            positionsThreatened[t.to1D(m,n)] ++;
     }
 
     private void markPositionAsThreatened(Position p ) {
@@ -83,7 +83,7 @@ public class ChessBoard {
 
     private void unMarkPositionAsThreatened(int m, int n) {
         if (inBound(m, n))
-            positionsThreatened[m][n] --;
+            positionsThreatened[t.to1D(m,n)] --;
     }
 
     private void unMarkPositionAsThreatened(Position p) {
@@ -121,7 +121,7 @@ public class ChessBoard {
     }
 
     private boolean isPositionEmpty(int m, int n) {
-        return position[m][n] == 0;
+        return position[t.to1D(m,n)] == 0;
     }
 
     private boolean isColumnThreatened(int n) {
@@ -149,7 +149,7 @@ public class ChessBoard {
     }
 
     private boolean isPositionThreatened(int m, int n) {
-        return positionsThreatened[m][n] > 0;
+        return positionsThreatened[t.to1D(m,n)] > 0;
     }
 
     public boolean hasPieceInDiagonals(Position position){
@@ -167,15 +167,15 @@ public class ChessBoard {
      */
     public ChessBoard cloneBoard() {
 
-        ChessBoard clone = new ChessBoard(this.M, this.N,this.pieces);
+        ChessBoard clone = new ChessBoard(this.M, this.N,this.pieces,this.t);
 
         for (int m = 0; m < M; m++)
             for (int n = 0; n < N; n++)
-                clone.position[m][n] = position[m][n];
+                clone.position[t.to1D(m,n)] = position[t.to1D(m,n)];
 
         for (int m = 0; m < M; m++)
             for (int n = 0; n < N; n++)
-                clone.positionsThreatened[m][n] = positionsThreatened[m][n];
+                clone.positionsThreatened[t.to1D(m,n)] = positionsThreatened[t.to1D(m,n)];
 
         return clone;
     }
@@ -185,12 +185,12 @@ public class ChessBoard {
         StringBuilder b =  new StringBuilder();
         for (int m = 0; m < M; m++) {
             for (int n = 0; n < N; n++) {
-                b.append(this.position[m][n]);
+                b.append(this.position[t.to1D(m,n)]);
                 b.append('\t');
             }
             b.append("\t\t");
             for (int n = 0; n < N; n++) {
-                b.append(this.positionsThreatened[m][n]);
+                b.append(this.positionsThreatened[t.to1D(m,n)]);
                 b.append('\t');
             }
             b.append('\n');
@@ -204,26 +204,17 @@ public class ChessBoard {
     public List<Placement> possibleMoves() {
         List<Placement> placements = new ArrayList<Placement>();
         int nextPiece = pieces.get(pieceIndex);
-
-        for (int m = 0 ; m < M; m++)
-            for (int n = 0; n < N; n++) {
-                Placement p = new Placement( m, n,nextPiece);
-                if(current != null && p.piece == current.piece && !isPositionGreaterThen(m,n,current))
-                    continue;
-
-                if (canPlace(p)) {
-                    placements.add(p);
-                }
+        int start = 0;
+        if(current != null && nextPiece == current.piece)
+            start = t.to1D(current.position);
+        for (int i = start ; i < M * N; i++){
+            Placement p = new Placement(t.to2D(i),nextPiece);
+            if (canPlace(p)) {
+                placements.add(p);
             }
+        }
         return placements;
     }
-
-    private boolean isPositionGreaterThen(int m, int n, Placement p) {
-        int order = m * N + n;
-        int c_order = p == null ? 0 : p.getPosition().m * N + p.getPosition().n;
-        return order >= c_order;
-    }
-
 
     private boolean canPlace(Placement p) {//int piece, int m, int n) {
         int m = p.position.m;
@@ -254,7 +245,7 @@ public class ChessBoard {
         Position piecePos = placement.getPosition();
 
         pieceIndex ++;
-        position[piecePos.m][piecePos.n] = service.getType();
+        position[t.to1D(piecePos.m,piecePos.n)] = service.getType();
         piecesInColumn[piecePos.n] ++;
         piecesInLine[piecePos.m] ++;
 
@@ -285,7 +276,7 @@ public class ChessBoard {
         Position piecePos = placement.getPosition();
 
         pieceIndex --;
-        position[piecePos.m][piecePos.n] = 0;
+        position[t.to1D(piecePos.m,piecePos.n)] = 0;
         piecesInColumn[piecePos.n] --;
         piecesInLine[piecePos.m] --;
 
