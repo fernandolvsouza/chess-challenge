@@ -164,7 +164,7 @@ public class ChessBoard {
      * Method that calculate the next moves
      */
     public List<Placement> possibleMoves() {
-        List<Placement> placements = new ArrayList<>();
+        List<Placement> placements = new ArrayList<Placement>();
         int nextPiece = pieces.get(pieceIndex);
 
         for (int m = 0 ; m < M; m++)

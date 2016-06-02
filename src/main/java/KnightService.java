@@ -5,14 +5,14 @@ public class KnightService implements PieceService{
     public Position[] getThreatenedPositions(Position piecePos) {
         Position[] positions = new Position[8];
 
-        positions[0] = new Position(piecePos.m - 3, piecePos.n - 1);
-        positions[1] = new Position(piecePos.m - 3, piecePos.n + 1);
-        positions[2] = new Position(piecePos.m - 1, piecePos.n + 3);
-        positions[3] = new Position(piecePos.m + 1, piecePos.n + 3);
-        positions[4] = new Position(piecePos.m + 3, piecePos.n - 1);
-        positions[5] = new Position(piecePos.m + 3, piecePos.n + 1);
-        positions[6] = new Position(piecePos.m - 1, piecePos.n - 3);
-        positions[7] = new Position(piecePos.m + 1, piecePos.n - 3);
+        positions[0] = new Position(piecePos.m - 2, piecePos.n - 1);
+        positions[1] = new Position(piecePos.m - 2, piecePos.n + 1);
+        positions[2] = new Position(piecePos.m - 1, piecePos.n + 2);
+        positions[3] = new Position(piecePos.m + 1, piecePos.n + 2);
+        positions[4] = new Position(piecePos.m + 2, piecePos.n - 1);
+        positions[5] = new Position(piecePos.m + 2, piecePos.n + 1);
+        positions[6] = new Position(piecePos.m - 1, piecePos.n - 2);
+        positions[7] = new Position(piecePos.m + 1, piecePos.n - 2);
 
         return positions;
     }
