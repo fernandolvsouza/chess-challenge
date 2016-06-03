@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -91,11 +90,21 @@ public class ChessBoard {
     }
 
     private void markDiagonalAsThreatened(Position position){
+        threatenedDiagonalBottomUp[ position.m + position.n ] ++;
+        threatenedDiagonalUpBottom[ position.m - position.n + M -1] ++;
+    }
+
+    private void unMarkDiagonalAsThreatened(Position position){
+        threatenedDiagonalBottomUp[ position.m + position.n ] --;
+        threatenedDiagonalUpBottom[ position.m - position.n + M -1] --;
+    }
+
+    private void markDiagonalHasPiece(Position position){
         piecesInDiagonalBottomUp[ position.m + position.n ] ++;
         piecesInDiagonalUpBottom[ position.m - position.n + M -1] ++;
     }
 
-    private void unMarkDiagonalAsThreatened(Position position){
+    private void unMarkDiagonalHasPiece(Position position){
         piecesInDiagonalBottomUp[ position.m + position.n ] --;
         piecesInDiagonalUpBottom[ position.m - position.n + M -1] --;
     }
@@ -159,7 +168,7 @@ public class ChessBoard {
 
     private boolean isAnyDiagonalThreatened(Position position){
         return threatenedDiagonalBottomUp[ position.m + position.n ] > 0
-                || threatenedDiagonalUpBottom[ position.m-position.n + M - 1 ] > 0;
+                || threatenedDiagonalUpBottom[ position.m - position.n + M - 1 ] > 0;
     }
 
     /**
@@ -185,14 +194,36 @@ public class ChessBoard {
         StringBuilder b =  new StringBuilder();
         for (int m = 0; m < M; m++) {
             for (int n = 0; n < N; n++) {
-                b.append(this.position[t.to1D(m,n)]);
+                char c;
+                switch (this.position[t.to1D(m,n)]){
+                    case ChessChallenge.KING :
+                        c ='K';
+                        break;
+                    case ChessChallenge.QUEEN :
+                        c ='Q';
+                        break;
+                    case ChessChallenge.BISHOP :
+                        c ='B';
+                        break;
+                    case ChessChallenge.ROOK :
+                        c ='R';
+                        break;
+                    case ChessChallenge.KNIGHT :
+                        c ='N';
+                        break;
+                    default:
+                        c = '0';
+                        break;
+                }
+
+                b.append(c);
                 b.append('\t');
             }
-            b.append("\t\t");
+            /*b.append("\t\t");
             for (int n = 0; n < N; n++) {
                 b.append(this.positionsThreatened[t.to1D(m,n)]);
                 b.append('\t');
-            }
+            }*/
             b.append('\n');
         }
         return b.toString();
@@ -254,6 +285,8 @@ public class ChessBoard {
         int[] threatenedColumns = service.getThreatenedColumns(piecePos);
 
 
+        markDiagonalHasPiece(placement.position);
+
         for (Position p : threatenedPositions)
             markPositionAsThreatened(p);
 
@@ -283,6 +316,8 @@ public class ChessBoard {
         Position[] threatenedPositions = service.getThreatenedPositions(piecePos);
         int[] threatenedLines = service.getThreatenedLines(piecePos);
         int[] threatenedColumns = service.getThreatenedColumns(piecePos);
+
+        unMarkDiagonalHasPiece(placement.position);
 
         for (Position p : threatenedPositions)
             unMarkPositionAsThreatened(p);

@@ -14,9 +14,10 @@ public class ChessChallenge {
     static final int ROOK = 3;
     static final int KNIGHT = 4;
 
-    private Stack<ChessBoard> result;
+    //private Stack<ChessBoard> result;
     private ChessBoard  board;
-    private int count = 0;
+
+    private int countResult = 0;
 
     public ChessChallenge(int M, int N, int king, int queen, int bishop, int rook, int knight) {
 
@@ -27,7 +28,7 @@ public class ChessChallenge {
         count[ROOK] = rook;
         count[KNIGHT] = knight;
 
-        this.result = new Stack<ChessBoard>();
+        //this.result = new Stack<ChessBoard>();
         List<Integer> pieces = new ArrayList<Integer>(king + queen + bishop + rook + knight);
 
         for (int i = 1; i < count.length; i++)
@@ -40,18 +41,18 @@ public class ChessChallenge {
 
     public int solve() {
         search(board);
-        return count;
+        return countResult;
     }
 
     private void search( ChessBoard board ){
+
         if(board.isComplete()) {
-            System.out.println(board.toString());
+            //System.out.println(board.toString());
             //System.out.print(board.isComplete() + "\n\n");
             //result.push(board.cloneBoard());
-            count++;
+            countResult++;
             return;
         }
-
 
         List<Placement> placements = board.possibleMoves();
         for (Placement placement : placements){
@@ -62,9 +63,9 @@ public class ChessChallenge {
         }
     }
 
-    public Stack<ChessBoard> getResult(){
+    /*public Stack<ChessBoard> getResult(){
         return result;
-    }
+    }*/
 
 
 }

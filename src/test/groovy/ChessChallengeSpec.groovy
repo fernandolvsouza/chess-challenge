@@ -70,6 +70,28 @@ class ChessChallengeSpec extends Specification {
         c.solve() == 4
     }
 
+    def "test 4x4 , 2 Queens and 1 knight."() {
+        setup:
+        ChessChallenge c  = new ChessChallenge(4,4,0,2,0,0,1)
+        expect:
+        c.solve() == 8
+    }
+
+    def "test 4x4 , 2 Bishops and 1 knight."() {
+        setup:
+        ChessChallenge c  = new ChessChallenge(4,4,0,0,2,0,1)
+        expect:
+        c.solve() == 408
+    }
+
+    def "test 4x4 , 2 Bishops and 1 King."() {
+        setup:
+        ChessChallenge c  = new ChessChallenge(4,4,1,0,2,0,0)
+        expect:
+        c.solve() == 392
+    }
+
+
     def "test 4x4 2 Roots and 4 Knights"() {
         setup:
         ChessChallenge c  = new ChessChallenge(4,4,0,0,0,2,4)
@@ -123,14 +145,16 @@ class ChessChallengeSpec extends Specification {
         ChessChallenge c  = new ChessChallenge(7,7,0,2,2,0,1)
 
         expect:
-        c.solve() == 930032
+        c.solve() == 339152
+
     }
 
     def "test 7x7 2 Kings, 2 Queens , 2 Bishops, 1Knight"() {
         setup:
         ChessChallenge c  = new ChessChallenge(7,7,2,2,2,0,1)
         expect:
-        c.solve() == 36998668
+
+        c.solve() == 3063828
     }
 
     /*def "test 17x17 , 2 Bishops, 1 knight"() {

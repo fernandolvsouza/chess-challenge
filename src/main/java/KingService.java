@@ -40,6 +40,7 @@ public class KingService implements PieceService{
                 && chessBoard.isPositionEmptyOrOutOfBound(p.position.m,p.position.n + 1)
                 && chessBoard.isPositionEmptyOrOutOfBound(p.position.m + 1,p.position.n + 1)
                 && chessBoard.isPositionEmptyOrOutOfBound(p.position.m - 1,p.position.n + 1)
-                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m + 1,p.position.n - 1);
+                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m + 1,p.position.n - 1)
+                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m + 1,p.position.n);
     }
 }
