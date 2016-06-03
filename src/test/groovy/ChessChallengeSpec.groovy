@@ -123,15 +123,14 @@ class ChessChallengeSpec extends Specification {
         ChessChallenge c  = new ChessChallenge(7,7,0,2,2,0,1)
 
         expect:
-        c.solve() == 26
+        c.solve() == 930032
     }
 
     def "test 7x7 2 Kings, 2 Queens , 2 Bishops, 1Knight"() {
         setup:
         ChessChallenge c  = new ChessChallenge(7,7,2,2,2,0,1)
-
         expect:
-        c.solve() == 26
+        c.solve() == 36998668
     }
 
     /*def "test 17x17 , 2 Bishops, 1 knight"() {
