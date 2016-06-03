@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -185,14 +184,36 @@ public class ChessBoard {
         StringBuilder b =  new StringBuilder();
         for (int m = 0; m < M; m++) {
             for (int n = 0; n < N; n++) {
-                b.append(this.position[t.to1D(m,n)]);
+                char c;
+                switch (this.position[t.to1D(m,n)]){
+                    case ChessChallenge.KING :
+                        c ='K';
+                        break;
+                    case ChessChallenge.QUEEN :
+                        c ='Q';
+                        break;
+                    case ChessChallenge.BISHOP :
+                        c ='B';
+                        break;
+                    case ChessChallenge.ROOK :
+                        c ='R';
+                        break;
+                    case ChessChallenge.KNIGHT :
+                        c ='N';
+                        break;
+                    default:
+                        c = '0';
+                        break;
+                }
+
+                b.append(c);
                 b.append('\t');
             }
-            b.append("\t\t");
+            /*b.append("\t\t");
             for (int n = 0; n < N; n++) {
                 b.append(this.positionsThreatened[t.to1D(m,n)]);
                 b.append('\t');
-            }
+            }*/
             b.append('\n');
         }
         return b.toString();

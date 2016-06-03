@@ -17,7 +17,6 @@ public class ChessChallenge {
     private Stack<ChessBoard> result;
     private ChessBoard  board;
 
-
     public ChessChallenge(int M, int N, int king, int queen, int bishop, int rook, int knight) {
 
         int[] count = new int[6];
@@ -45,10 +44,8 @@ public class ChessChallenge {
 
     private void search( ChessBoard board ){
 
-
         if(board.isComplete()) {
-            /*System.out.println(board.toString());
-            System.out.print(board.isComplete() + "\n\n");*/
+            System.out.println(board.toString());
             result.push(board.cloneBoard());
             return;
         }

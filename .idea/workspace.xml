@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eb5e68c-f06d-4f65-ad0f-63b7a76bb474" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/BishopService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ChessBoard.java" afterPath="$PROJECT_DIR$/src/main/java/ChessBoard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ChessChallenge.java" afterPath="$PROJECT_DIR$/src/main/java/ChessChallenge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/KingService.java" afterPath="$PROJECT_DIR$/src/main/java/KingService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/KnightService.java" afterPath="$PROJECT_DIR$/src/main/java/KnightService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PieceService.java" afterPath="$PROJECT_DIR$/src/main/java/PieceService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PieceServiceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/PieceServiceProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/RookService.java" afterPath="$PROJECT_DIR$/src/main/java/RookService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/ChessChallengeSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/ChessChallengeSpec.groovy" />
     </list>
     <ignored path="chess-challenge.iws" />
@@ -56,41 +50,28 @@
       <file leaf-file-name="ChessBoard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ChessBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="210" column="63" selection-start-line="210" selection-start-column="63" selection-end-line="210" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5815#5826#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="-458">
+              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChessChallenge.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ChessChallenge.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ChessChallenge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="40" column="10" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="10" />
+            <state relative-caret-position="210">
+              <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChessChallengeSpec.groovy" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChessChallengeSpec.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/ChessChallengeSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+            <state relative-caret-position="150">
+              <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="48" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -127,9 +108,12 @@
             <state relative-caret-position="315">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="false" />
+                <element signature="e#331#332#0" expanded="false" />
+                <element signature="e#391#392#0" expanded="false" />
+                <element signature="e#425#426#0" expanded="false" />
+                <element signature="e#518#519#0" expanded="false" />
+                <element signature="e#562#563#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -428,9 +412,9 @@
         <option value="$PROJECT_DIR$/src/main/java/RookService.java" />
         <option value="$PROJECT_DIR$/src/main/java/KnightService.java" />
         <option value="$PROJECT_DIR$/src/main/java/BishopService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ChessChallenge.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ChessBoard.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/ChessChallengeSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/ChessBoard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ChessChallenge.java" />
       </list>
     </option>
   </component>
@@ -477,8 +461,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -553,7 +536,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -570,49 +554,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChessChallengeSpec.test 4x4 2 Roots and 4 Knights">
-    <configuration default="false" name="ChessChallengeSpec.test 7x7 , 2 Bishops, 1 knight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="chess-challenge_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChessChallengeSpec" />
-      <option name="METHOD_NAME" value="test 7x7 , 2 Bishops, 1 knight" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ChessChallengeSpec.test 7x7 , 2 Bishops, 2 Rooks, 1 knight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="chess-challenge_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChessChallengeSpec" />
-      <option name="METHOD_NAME" value="test 7x7 , 2 Bishops, 2 Rooks, 1 knight" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ChessChallengeSpec">
     <configuration default="false" name="ChessChallengeSpec.test 17x17 , 2 Bishops, 1 knight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="chess-challenge_test" />
@@ -663,6 +605,48 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ChessChallengeSpec" />
       <option name="METHOD_NAME" value="test 4x4 2 Roots and 4 Knights" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChessChallengeSpec.test 6x6 2 Roots and 4 Knights" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="chess-challenge_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ChessChallengeSpec" />
+      <option name="METHOD_NAME" value="test 6x6 2 Roots and 4 Knights" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChessChallengeSpec.test 7x7 2 Kings, 2 Queens , 2 Bishops, 1Knight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="chess-challenge_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ChessChallengeSpec" />
+      <option name="METHOD_NAME" value="test 7x7 2 Kings, 2 Queens , 2 Bishops, 1Knight" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1087,19 +1071,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 7x7 , 2 Bishops, 1 knight" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 7x7 , 2 Bishops, 2 Rooks, 1 knight" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 17x17 , 2 Bishops, 1 knight" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 4x4 2 Roots and 4 Knights" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 17x17 , 2 Bishops, 1 knight" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 4x4 2 Roots and 4 Knights" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 6x6 2 Roots and 4 Knights" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 7x7 2 Kings, 2 Queens , 2 Bishops, 1Knight" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 4x4 2 Roots and 4 Knights" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 17x17 , 2 Bishops, 1 knight" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 7x7 , 2 Bishops, 1 knight" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 7x7 , 2 Bishops, 2 Rooks, 1 knight" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 7x7 2 Kings, 2 Queens , 2 Bishops, 1Knight" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 6x6 2 Roots and 4 Knights" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 4x4 2 Roots and 4 Knights" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 17x17 , 2 Bishops, 1 knight" />
       </list>
     </recent_temporary>
   </component>
@@ -1119,46 +1103,47 @@
       <workItem from="1464530351933" duration="28836000" />
       <workItem from="1464656630704" duration="13531000" />
       <workItem from="1464826041920" duration="12450000" />
+      <workItem from="1464917764077" duration="1556000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChessChallengeSpec - 2016.06.02 at 01h 00m 10s.xml">
+    <history-entry file="ChessChallengeSpec - 2016.06.02 at 22h 41m 49s.xml">
       <configuration name="ChessChallengeSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec - 2016.06.02 at 01h 04m 59s.xml">
+    <history-entry file="ChessChallengeSpec - 2016.06.02 at 22h 44m 49s.xml">
       <configuration name="ChessChallengeSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec_test_17x17_,_2_Bishops,_1_knight - 2016.06.02 at 00h 55m 16s.xml">
-      <configuration name="ChessChallengeSpec.test 17x17 , 2 Bishops, 1 knight" configurationId="JUnit" />
+    <history-entry file="ChessChallengeSpec - 2016.06.02 at 22h 54m 02s.xml">
+      <configuration name="ChessChallengeSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec_test_17x17_,_2_Bishops,_1_knight - 2016.06.02 at 00h 57m 06s.xml">
-      <configuration name="ChessChallengeSpec.test 17x17 , 2 Bishops, 1 knight" configurationId="JUnit" />
+    <history-entry file="ChessChallengeSpec - 2016.06.02 at 23h 00m 27s.xml">
+      <configuration name="ChessChallengeSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec_test_4x4_2_Roots_and_4_Knights - 2016.06.02 at 01h 09m 21s.xml">
+    <history-entry file="ChessChallengeSpec_test_4x4_2_Roots_and_4_Knights - 2016.06.02 at 22h 40m 31s.xml">
       <configuration name="ChessChallengeSpec.test 4x4 2 Roots and 4 Knights" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec_test_4x4_2_Roots_and_4_Knights - 2016.06.02 at 01h 09m 36s.xml">
+    <history-entry file="ChessChallengeSpec_test_4x4_2_Roots_and_4_Knights - 2016.06.02 at 22h 40m 47s.xml">
       <configuration name="ChessChallengeSpec.test 4x4 2 Roots and 4 Knights" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec_test_4x4_2_Roots_and_4_Knights - 2016.06.02 at 01h 09m 55s.xml">
-      <configuration name="ChessChallengeSpec.test 4x4 2 Roots and 4 Knights" configurationId="JUnit" />
+    <history-entry file="ChessChallengeSpec_test_6x6_2_Roots_and_4_Knights - 2016.06.02 at 22h 45m 16s.xml">
+      <configuration name="ChessChallengeSpec.test 6x6 2 Roots and 4 Knights" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec_test_4x4_2_Roots_and_4_Knights - 2016.06.02 at 01h 10m 10s.xml">
-      <configuration name="ChessChallengeSpec.test 4x4 2 Roots and 4 Knights" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChessChallengeSpec_test_4x4_2_Roots_and_4_Knights - 2016.06.02 at 01h 11m 24s.xml">
-      <configuration name="ChessChallengeSpec.test 4x4 2 Roots and 4 Knights" configurationId="JUnit" />
+    <history-entry file="ChessChallengeSpec_test_6x6_2_Roots_and_4_Knights - 2016.06.02 at 22h 46m 52s.xml">
+      <configuration name="ChessChallengeSpec.test 6x6 2 Roots and 4 Knights" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ChessChallengeSpec_test_7x7_,_2_Bishops,_1_knight - 2016.06.02 at 00h 54m 08s.xml">
       <configuration name="ChessChallengeSpec.test 7x7 , 2 Bishops, 1 knight" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ChessChallengeSpec_test_7x7_2_Kings,_2_Queens_,_2_Bishops,_1Knight - 2016.06.02 at 22h 57m 43s.xml">
+      <configuration name="ChessChallengeSpec.test 7x7 2 Kings, 2 Queens , 2 Bishops, 1Knight" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54817000" />
+    <option name="totallyTimeSpent" value="56373000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="979" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="979" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1169,13 +1154,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.421646" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5546787" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2257721" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29114583" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1187,6 +1171,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1220,12 +1205,77 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/ChessBoard.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2790">
+          <caret line="210" column="61" selection-start-line="210" selection-start-column="61" selection-end-line="210" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ChessChallenge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/ChessChallengeSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KnightService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PieceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BishopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#297#298#0" expanded="false" />
+            <element signature="e#331#332#0" expanded="false" />
+            <element signature="e#391#392#0" expanded="false" />
+            <element signature="e#425#426#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#562#563#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ChessBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
           <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5815#5826#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,9 +1293,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,7 +1331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
           <caret line="482" column="0" selection-start-line="482" selection-start-column="0" selection-end-line="482" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,7 +1354,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1323,7 +1369,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,8 +1377,8 @@
         <state relative-caret-position="330">
           <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="21" />
           <folding>
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="false" />
+            <element signature="e#1024#1025#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1343,19 +1388,8 @@
         <state relative-caret-position="210">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="21" />
           <folding>
-            <element signature="e#480#481#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KnightService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <element signature="e#1002#1003#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="false" />
+            <element signature="e#508#509#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1376,22 +1410,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ChessChallenge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BishopService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="false" />
+            <element signature="e#331#332#0" expanded="false" />
+            <element signature="e#391#392#0" expanded="false" />
+            <element signature="e#425#426#0" expanded="false" />
+            <element signature="e#518#519#0" expanded="false" />
+            <element signature="e#562#563#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/KnightService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1404,24 +1444,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ChessBoard.java">
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/ChessChallengeSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="210" column="63" selection-start-line="210" selection-start-column="63" selection-end-line="210" selection-end-column="63" />
+        <state relative-caret-position="150">
+          <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5815#5826#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/ChessChallengeSpec.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ChessBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="-458">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ChessChallenge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
