@@ -116,7 +116,7 @@ public class ChessBoard {
     * Auxiliary methods for verify position status
     */
 
-    private boolean isPositionEmptyOrOutOfBound(Position p ) {
+    public  boolean isPositionEmptyOrOutOfBound(Position p ) {
         return isPositionEmptyOrOutOfBound(p.m,p.n);
     }
 
@@ -250,7 +250,7 @@ public class ChessBoard {
 
 
         PieceService service = PieceServiceProvider.getService(p.piece);
-        return service.canPlace(p,this);
+        return service.canPlace(p.position,this);
     }
 
     public void putPiece(Placement placement) {

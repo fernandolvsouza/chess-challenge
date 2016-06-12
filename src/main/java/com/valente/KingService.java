@@ -35,14 +35,15 @@ public class KingService implements PieceService{
         return Piece.KING;
     }
 
-    public boolean canPlace(Placement p, ChessBoard chessBoard) {
-        return  chessBoard.isPositionEmptyOrOutOfBound(p.position.m - 1,p.position.n)
-                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m,p.position.n - 1)
-                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m - 1,p.position.n - 1)
-                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m,p.position.n + 1)
-                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m + 1,p.position.n + 1)
-                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m - 1,p.position.n + 1)
-                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m + 1,p.position.n - 1)
-                && chessBoard.isPositionEmptyOrOutOfBound(p.position.m + 1,p.position.n);
+    public boolean canPlace(Position position, ChessBoard chessBoard) {
+        return  chessBoard.isPositionEmptyOrOutOfBound(position.m,position.n + 1)
+                && chessBoard.isPositionEmptyOrOutOfBound(position.m,position.n - 1)
+                && chessBoard.isPositionEmptyOrOutOfBound(position.m - 1,position.n)
+                && chessBoard.isPositionEmptyOrOutOfBound(position.m - 1,position.n - 1)
+                && chessBoard.isPositionEmptyOrOutOfBound(position.m - 1,position.n + 1)
+                && chessBoard.isPositionEmptyOrOutOfBound(position.m + 1,position.n)
+                && chessBoard.isPositionEmptyOrOutOfBound(position.m + 1,position.n + 1)
+                && chessBoard.isPositionEmptyOrOutOfBound(position.m + 1,position.n - 1);
+
     }
 }

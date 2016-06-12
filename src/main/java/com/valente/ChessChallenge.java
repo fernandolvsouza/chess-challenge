@@ -82,7 +82,7 @@ public class ChessChallenge {
 
         final long endTime = System.currentTimeMillis();
         final long duration = endTime - startTime;
-        System.out.println("Time took to process and write to output file (output.txt): " + duration / 1000 + " seconds "  );
+        System.out.println("Time took to process and write to output file (output.txt): " + (float)duration / 1000 + " seconds "  );
 
         return countResult;
     }

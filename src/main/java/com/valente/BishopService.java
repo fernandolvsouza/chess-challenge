@@ -26,7 +26,7 @@ public class BishopService implements PieceService{
         return Piece.BISHOP;
     }
 
-    public boolean canPlace(Placement p, ChessBoard chessBoard) {
-        return !chessBoard.hasPieceInDiagonals(p.position);
+    public boolean canPlace(Position position, ChessBoard chessBoard) {
+        return !chessBoard.hasPieceInDiagonals(position);
     }
 }

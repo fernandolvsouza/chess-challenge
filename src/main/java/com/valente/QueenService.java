@@ -26,7 +26,7 @@ public class QueenService implements PieceService{
         return Piece.QUEEN;
     }
 
-    public boolean canPlace(Placement p, ChessBoard chessBoard) {
-        return !chessBoard.hasPieceInDiagonals(p.position);
+    public boolean canPlace(Position position, ChessBoard chessBoard) {
+        return !chessBoard.hasPieceInDiagonals(position) && !chessBoard.hasPieceInColumn(position.n) && !chessBoard.hasPieceInLine(position.m);
     }
 }

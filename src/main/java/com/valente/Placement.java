@@ -8,11 +8,6 @@ public class Placement {
     Placement from ;
     Position position;
 
-    public Placement(int m, int n, Piece piece) {
-        position = new Position(m,n);
-        this.piece = piece;
-    }
-
     public Placement(Position position, Piece nextPiece) {
         this.position = position;
         this.piece = nextPiece;

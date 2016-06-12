@@ -33,10 +33,10 @@ public class KnightService implements PieceService{
         return Piece.KNIGHT;
     }
 
-    public boolean canPlace(Placement p, ChessBoard chessBoard) {
-        Position[] positions = getThreatenedPositions(p.getPosition());
+    public boolean canPlace(Position position, ChessBoard chessBoard) {
+        Position[] positions = getThreatenedPositions(position);
         for (Position pos :  positions) {
-                if(!chessBoard.isPositionEmptyOrOutOfBound(pos.m,pos.n))
+                if(!chessBoard.isPositionEmptyOrOutOfBound(pos))
                     return false;
         }
         return true;

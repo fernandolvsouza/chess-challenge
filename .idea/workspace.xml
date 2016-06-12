@@ -2,27 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eb5e68c-f06d-4f65-ad0f-63b7a76bb474" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/chess-challenge_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/chess-challenge_main.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cglib_cglib_nodep_2_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/BishopServiceSpec.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/CheesBoardSpec.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/KingServiceSpec.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/KnightServiceSpec.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/QueenServiceSpec.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/RookServiceSpec.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/chess-challenge_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/chess-challenge_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/BishopService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/BishopService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/CoordinateTransform.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/CoordinateTransform.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/KingService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/KingService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/KnightService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/KnightService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/Piece.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/Piece.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/PieceService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/PieceService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/PieceServiceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/PieceServiceProvider.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/Placement.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/Placement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/Position.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/Position.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/QueenService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/QueenService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/RookService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/RookService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/com/valente/CoordinateTransformSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/CoordinateTransformSpec.groovy" />
     </list>
     <ignored path="chess-challenge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,18 +53,7 @@
           <activation />
         </task>
         <projects_view>
-          <tree_state>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="chess-challenge" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-            </PATH>
-          </tree_state>
+          <tree_state />
         </projects_view>
       </state>
     </system>
@@ -75,55 +63,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ChessBoard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java">
+      <file leaf-file-name="RookServiceSpec.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/RookServiceSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3933#3934#0" expanded="true" />
-                <element signature="e#3992#3993#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KingService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/KingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+            <state relative-caret-position="-92">
+              <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChessChallengeSpec.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy">
+      <file leaf-file-name="KnightServiceSpec.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/KnightServiceSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="42" column="168" selection-start-line="42" selection-start-column="114" selection-end-line="42" selection-end-column="168" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -132,51 +86,8 @@
       <file leaf-file-name="KnightService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/KnightService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="29" />
-              <folding>
-                <element signature="e#1093#1094#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BishopService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/BishopService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChessChallenge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SortedList.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/javafx-src.zip!/javafx/collections/transformation/SortedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-706">
-              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+            <state relative-caret-position="361">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -235,10 +146,6 @@
                 <option name="description" value="Displays the sub-projects of root project 'chess-challenge'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="solveChess" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
@@ -407,7 +314,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2930287951000" />
+        <entry key="$PROJECT_DIR$" value="2930293330000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -519,20 +426,26 @@
         <option value="$PROJECT_DIR$/src/main/java/ChessChallenge.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/ChessChallengeSpec.groovy" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/valente/CoordinateTransformSpec.groovy" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valente/PieceService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valente/KnightService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valente/KingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/valente/PieceServiceProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valente/RookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valente/Placement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valente/QueenService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/valente/Piece.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valente/BishopService.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valente/Placement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valente/PieceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valente/BishopService.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/valente/CheesBoardSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/valente/RookServiceSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valente/RookService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valente/KnightService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/valente/KnightServiceSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valente/KingService.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/valente/KingServiceSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valente/QueenService.java" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/valente/QueenServiceSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/test/groovy/com/valente/BishopServiceSpec.groovy" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java" />
       </list>
     </option>
   </component>
@@ -552,7 +465,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="979" />
+    <option name="height" value="985" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -607,6 +520,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="chess-challenge" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -725,17 +642,122 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.valente" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ChessChallenge">
-    <configuration default="false" name="ChessChallengeSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BishopServiceSpec">
+    <configuration default="false" name="All in chess-challenge_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="chess-challenge_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="QueenServiceSpec.test queen service canPlace method false because diagonal has piece" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.valente.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="chess-challenge_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.valente" />
-      <option name="MAIN_CLASS_NAME" value="com.valente.ChessChallengeSpec" />
+      <option name="MAIN_CLASS_NAME" value="com.valente.QueenServiceSpec" />
+      <option name="METHOD_NAME" value="test queen service canPlace method false because diagonal has piece" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="QueenServiceSpec.test queen service canPlace method true" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.valente.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="chess-challenge_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.valente" />
+      <option name="MAIN_CLASS_NAME" value="com.valente.QueenServiceSpec" />
+      <option name="METHOD_NAME" value="test queen service canPlace method true" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="QueenServiceSpec.test rook service canPlace method false because column has piece" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.valente.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="chess-challenge_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.valente" />
+      <option name="MAIN_CLASS_NAME" value="com.valente.QueenServiceSpec" />
+      <option name="METHOD_NAME" value="test rook service canPlace method false because column has piece" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BishopServiceSpec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.valente.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="chess-challenge_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.valente" />
+      <option name="MAIN_CLASS_NAME" value="com.valente.BishopServiceSpec" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -748,99 +770,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ChessChallengeSpec.test 7x7 2 Kings, 2 Queens , 2 Bishops, 1Knight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="chess-challenge_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.valente" />
-      <option name="MAIN_CLASS_NAME" value="com.valente.ChessChallengeSpec" />
-      <option name="METHOD_NAME" value="test 7x7 2 Kings, 2 Queens , 2 Bishops, 1Knight" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ChessChallengeSpec.test builder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.valente.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="chess-challenge_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.valente" />
-      <option name="MAIN_CLASS_NAME" value="com.valente.ChessChallengeSpec" />
-      <option name="METHOD_NAME" value="test builder" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ChessChallengeSpec.test several input cases" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.valente.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="chess-challenge_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.valente" />
-      <option name="MAIN_CLASS_NAME" value="com.valente.ChessChallengeSpec" />
-      <option name="METHOD_NAME" value="test several input cases" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ChessChallenge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.valente.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.valente.ChessChallenge" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="chess-challenge_main" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1254,19 +1183,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 7x7 2 Kings, 2 Queens , 2 Bishops, 1Knight" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test builder" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test several input cases" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ChessChallenge" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in chess-challenge_test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.QueenServiceSpec.test queen service canPlace method false because diagonal has piece" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.QueenServiceSpec.test queen service canPlace method true" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.QueenServiceSpec.test rook service canPlace method false because column has piece" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BishopServiceSpec" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ChessChallenge" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test several input cases" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test builder" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ChessChallengeSpec.test 7x7 2 Kings, 2 Queens , 2 Bishops, 1Knight" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BishopServiceSpec" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.QueenServiceSpec.test rook service canPlace method false because column has piece" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.QueenServiceSpec.test queen service canPlace method false because diagonal has piece" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.QueenServiceSpec.test queen service canPlace method true" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in chess-challenge_test" />
       </list>
     </recent_temporary>
   </component>
@@ -1288,74 +1217,75 @@
       <workItem from="1464826041920" duration="12450000" />
       <workItem from="1464917764077" duration="1556000" />
       <workItem from="1465748713911" duration="9669000" />
+      <workItem from="1465760743226" duration="6650000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChessChallengeSpec - 2016.06.12 at 14h 49m 12s.xml">
-      <configuration name="ChessChallengeSpec" configurationId="JUnit" />
+    <history-entry file="All_in_chess-challenge_test - 2016.06.12 at 19h 43m 12s.xml">
+      <configuration name="All in chess-challenge_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec - 2016.06.12 at 14h 59m 51s.xml">
-      <configuration name="ChessChallengeSpec" configurationId="JUnit" />
+    <history-entry file="BishopServiceSpec - 2016.06.12 at 19h 47m 48s.xml">
+      <configuration name="BishopServiceSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec - 2016.06.12 at 15h 04m 03s.xml">
-      <configuration name="ChessChallengeSpec" configurationId="JUnit" />
+    <history-entry file="BishopServiceSpec - 2016.06.12 at 19h 48m 01s.xml">
+      <configuration name="BishopServiceSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec - 2016.06.12 at 15h 05m 56s.xml">
-      <configuration name="ChessChallengeSpec" configurationId="JUnit" />
+    <history-entry file="BishopServiceSpec - 2016.06.12 at 19h 50m 09s.xml">
+      <configuration name="BishopServiceSpec" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec - 2016.06.12 at 15h 07m 48s.xml">
-      <configuration name="ChessChallengeSpec" configurationId="JUnit" />
+    <history-entry file="QueenServiceSpec_test_queen_service_canPlace_method_false_because_diagonal_has_piece - 2016.06.12 at 19h 44m 34s.xml">
+      <configuration name="QueenServiceSpec.test queen service canPlace method false because diagonal has piece" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec - 2016.06.12 at 15h 09m 00s.xml">
-      <configuration name="ChessChallengeSpec" configurationId="JUnit" />
+    <history-entry file="QueenServiceSpec_test_queen_service_canPlace_method_true - 2016.06.12 at 19h 44m 31s.xml">
+      <configuration name="QueenServiceSpec.test queen service canPlace method true" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec - 2016.06.12 at 15h 23m 33s.xml">
-      <configuration name="ChessChallengeSpec" configurationId="JUnit" />
+    <history-entry file="QueenServiceSpec_test_rook_service_canPlace_method_false_because_column_has_piece - 2016.06.12 at 19h 45m 02s.xml">
+      <configuration name="QueenServiceSpec.test rook service canPlace method false because column has piece" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec - 2016.06.12 at 15h 24m 46s.xml">
-      <configuration name="ChessChallengeSpec" configurationId="JUnit" />
+    <history-entry file="QueenServiceSpec_test_rook_service_canPlace_method_false_because_column_has_piece - 2016.06.12 at 19h 45m 11s.xml">
+      <configuration name="QueenServiceSpec.test rook service canPlace method false because column has piece" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec - 2016.06.12 at 15h 26m 55s.xml">
-      <configuration name="ChessChallengeSpec" configurationId="JUnit" />
+    <history-entry file="QueenServiceSpec_test_rook_service_canPlace_method_false_because_column_has_piece - 2016.06.12 at 19h 45m 35s.xml">
+      <configuration name="QueenServiceSpec.test rook service canPlace method false because column has piece" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChessChallengeSpec_test_several_input_cases - 2016.06.12 at 15h 20m 48s.xml">
-      <configuration name="ChessChallengeSpec.test several input cases" configurationId="JUnit" />
+    <history-entry file="QueenServiceSpec_test_rook_service_canPlace_method_false_because_column_has_piece - 2016.06.12 at 19h 45m 43s.xml">
+      <configuration name="QueenServiceSpec.test rook service canPlace method false because column has piece" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66042000" />
+    <option name="totallyTimeSpent" value="72692000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="979" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="985" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32807216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32698768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36076662" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38297874" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2257721" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32807216" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29073483" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29073483" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990099" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39865622" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32807216" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1371,7 +1301,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/valente/KnightService.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="23" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1392,9 +1330,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3933#3934#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1419,10 +1355,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1438,10 +1371,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#655#656#0" expanded="false" />
-            <element signature="e#721#722#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1450,9 +1380,7 @@
         <state relative-caret-position="2790">
           <caret line="210" column="61" selection-start-line="210" selection-start-column="61" selection-end-line="210" selection-end-column="61" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3933#3934#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1485,10 +1413,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1504,10 +1429,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#655#656#0" expanded="false" />
-            <element signature="e#721#722#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1516,9 +1438,7 @@
         <state relative-caret-position="1140">
           <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3933#3934#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1583,14 +1503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spockframework/spock-core/1.0-groovy-2.4/db9597087c5e4afc2ef795c8ae89e32eddd019a6/spock-core-1.0-groovy-2.4-sources.jar!/org/spockframework/util/ReflectionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
@@ -1630,48 +1542,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/Placement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="37" column="46" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/Piece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/RookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-          <folding>
-            <element signature="e#571#572#0" expanded="false" />
-            <element signature="e#604#605#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/QueenService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-          <folding>
-            <element signature="e#572#573#0" expanded="false" />
-            <element signature="e#606#607#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/javafx-src.zip!/javafx/collections/transformation/SortedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-706">
+        <state relative-caret-position="255">
           <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#12326#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2531#2532#0" expanded="false" />
+            <element signature="e#2577#2578#0" expanded="false" />
+            <element signature="e#3896#3897#0" expanded="false" />
+            <element signature="e#3958#3959#0" expanded="false" />
+            <element signature="e#4027#4028#0" expanded="false" />
+            <element signature="e#4086#4087#0" expanded="false" />
+            <element signature="e#4203#4204#0" expanded="false" />
+            <element signature="e#4270#4271#0" expanded="false" />
+            <element signature="e#4343#4344#0" expanded="false" />
+            <element signature="e#4395#4396#0" expanded="false" />
+            <element signature="e#4996#4997#0" expanded="false" />
+            <element signature="e#5023#5024#0" expanded="false" />
+            <element signature="e#6316#6317#0" expanded="false" />
+            <element signature="e#6358#6359#0" expanded="false" />
+            <element signature="e#8290#8291#0" expanded="false" />
+            <element signature="e#8342#8343#0" expanded="false" />
+            <element signature="e#8459#8460#0" expanded="false" />
+            <element signature="e#8520#8521#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-2.9-bin/ebaspjjvvkuki3ldbldx7hexd/gradle-2.9/lib/gradle-core-2.9.jar!/org/gradle/api/tasks/JavaExec.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/Placement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/BishopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/PieceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1684,89 +1626,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-2.9-bin/ebaspjjvvkuki3ldbldx7hexd/gradle-2.9/lib/gradle-core-2.9.jar!/org/gradle/api/tasks/JavaExec.class">
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
+        <state relative-caret-position="135">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/CheesBoardSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/KingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3933#3934#0" expanded="true" />
-            <element signature="e#3992#3993#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="309">
+          <caret line="247" column="34" selection-start-line="247" selection-start-column="11" selection-end-line="247" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/PieceService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/RookServiceSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/BishopService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="-92">
+          <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/KnightService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="29" />
-          <folding>
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/KingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        <state relative-caret-position="361">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/RookService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="42" column="168" selection-start-line="42" selection-start-column="114" selection-end-line="42" selection-end-column="168" />
+        <state relative-caret-position="300">
+          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/QueenService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        <state relative-caret-position="315">
+          <caret line="29" column="142" selection-start-line="29" selection-start-column="142" selection-end-line="29" selection-end-column="142" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/QueenServiceSpec.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="1035">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/BishopServiceSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/Piece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/KingServiceSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/KnightServiceSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
           <folding />
         </state>
       </provider>

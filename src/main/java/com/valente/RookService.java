@@ -25,7 +25,7 @@ public class RookService implements PieceService{
         return Piece.ROOK;
     }
 
-    public boolean canPlace(Placement p, ChessBoard chessBoard) {
-        return !chessBoard.hasPieceInColumn(p.position.n) && !chessBoard.hasPieceInLine(p.position.m);
+    public boolean  canPlace(Position position, ChessBoard chessBoard) {
+        return !chessBoard.hasPieceInColumn(position.n) && !chessBoard.hasPieceInLine(position.m);
     }
 }

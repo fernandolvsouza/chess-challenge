@@ -9,5 +9,5 @@ public interface PieceService {
     int[] getThreatenedColumns(Position piecePos);
     boolean markDiagonals();
     Piece getType();
-    boolean canPlace(Placement p, ChessBoard chessBoard);
+    boolean canPlace(Position p, ChessBoard chessBoard);
 }
