@@ -1,3 +1,5 @@
+package com.valente;
+
 /**
  * Created by uq4n on 01/06/2016.
  */
@@ -9,16 +11,16 @@ public class PieceServiceProvider {
     private static BishopService bishopService = new BishopService();
     private static QueenService queenService = new QueenService();
 
-    public static PieceService getService( int type){
-        if(type == ChessChallenge.KING)
+    public static PieceService getService( Piece type){
+        if(type == Piece.KING)
             return kingService;
-        if(type == ChessChallenge.ROOK)
+        if(type == Piece.ROOK)
             return rookservice;
-        if(type == ChessChallenge.KNIGHT)
+        if(type == Piece.KNIGHT)
             return knightService;
-        if(type == ChessChallenge.BISHOP)
+        if(type == Piece.BISHOP)
             return bishopService;
-        if(type == ChessChallenge.QUEEN)
+        if(type == Piece.QUEEN)
             return queenService;
         throw new IllegalArgumentException();
     }

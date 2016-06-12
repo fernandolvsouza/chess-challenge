@@ -1,3 +1,5 @@
+package com.valente;
+
 /**
  * Created by uq4n on 01/06/2016.
  */
@@ -27,8 +29,8 @@ public class KnightService implements PieceService{
         return false;
     }
 
-    public int getType() {
-        return ChessChallenge.KNIGHT;
+    public Piece getType() {
+        return Piece.KNIGHT;
     }
 
     public boolean canPlace(Placement p, ChessBoard chessBoard) {

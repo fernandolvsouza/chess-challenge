@@ -1,6 +1,9 @@
+package com.valente
 /**
  * Created by flvs on 5/29/16.
  */
+
+import com.valente.CoordinateTransform
 import spock.lang.Specification
 
 class CoordinateTransformSpec extends Specification {

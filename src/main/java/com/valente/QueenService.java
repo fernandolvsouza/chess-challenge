@@ -1,7 +1,9 @@
+package com.valente;
+
 /**
  * Created by uq4n on 01/06/2016.
  */
-public class BishopService implements PieceService{
+public class QueenService implements PieceService{
     public Position[] getThreatenedPositions(Position piecePos) {
 
         Position[] positions = new Position[0];
@@ -9,19 +11,19 @@ public class BishopService implements PieceService{
     }
 
     public int[] getThreatenedLines(Position piecePos) {
-        return new int[]{};
+        return new int[]{piecePos.m};
     }
 
     public int[] getThreatenedColumns(Position piecePos) {
-        return new int[]{};
+        return new int[]{piecePos.n};
     }
 
     public boolean markDiagonals() {
         return true;
     }
 
-    public int getType() {
-        return ChessChallenge.BISHOP;
+    public Piece getType() {
+        return Piece.QUEEN;
     }
 
     public boolean canPlace(Placement p, ChessBoard chessBoard) {

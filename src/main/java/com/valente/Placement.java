@@ -1,17 +1,19 @@
+package com.valente;
+
 /**
  * Created by flvs on 5/30/16.
  */
 public class Placement {
-    int piece ;
+    Piece piece ;
     Placement from ;
     Position position;
 
-    public Placement(int m, int n, int piece) {
+    public Placement(int m, int n, Piece piece) {
         position = new Position(m,n);
         this.piece = piece;
     }
 
-    public Placement(Position position, int nextPiece) {
+    public Placement(Position position, Piece nextPiece) {
         this.position = position;
         this.piece = nextPiece;
     }
@@ -33,7 +35,7 @@ public class Placement {
     public int hashCode() {
         int result = position.m;
         result = 31 * result + position.n;
-        result = 31 * result + piece;
+        result = 31 * result + piece.ordinal();
         return result;
     }
 

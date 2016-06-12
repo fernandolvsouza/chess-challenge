@@ -1,3 +1,5 @@
+package com.valente;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,13 +10,13 @@ public class ChessBoard {
 
     private int M, N;
 
-    private int[] position;
+    private Piece[] position;
 
     private int[] positionsThreatened;
 
     private int pieceIndex = 0;
 
-    private List<Integer> pieces;
+    private List<Piece> pieces;
     private Placement current;
     private int[] threatenedLines;
     private int[] threatenedColumns;
@@ -25,13 +27,13 @@ public class ChessBoard {
     private int[] piecesInDiagonalBottomUp;
     private int[] piecesInDiagonalUpBottom;
     private CoordinateTransform t;
-    public ChessBoard(int M, int N, List<Integer> pieces, CoordinateTransform t) {
+    public ChessBoard(int M, int N, List<Piece> pieces, CoordinateTransform t) {
         this.t = t;
         this.M = M;
         this.N = N;
         this.pieces = pieces;
         this.positionsThreatened = new int[M*N];
-        this.position = new int[M*N];
+        this.position = new Piece[M*N];
         this.threatenedLines = new int[M];
         this.threatenedColumns = new int[N];
         this.piecesInLine = new int[M];
@@ -45,7 +47,7 @@ public class ChessBoard {
                 positionsThreatened[i] = 0;
 
         for (int i = 0; i < M*N; i++)
-                position[i] = 0;
+                position[i] = Piece.EMPTY;
 
         for (int m = 0; m < M; m++){
             threatenedLines[m] = 0;
@@ -130,7 +132,7 @@ public class ChessBoard {
     }
 
     private boolean isPositionEmpty(int m, int n) {
-        return position[t.to1D(m,n)] == 0;
+        return position[t.to1D(m,n)] == Piece.EMPTY;
     }
 
     private boolean isColumnThreatened(int n) {
@@ -194,27 +196,9 @@ public class ChessBoard {
         StringBuilder b =  new StringBuilder();
         for (int m = 0; m < M; m++) {
             for (int n = 0; n < N; n++) {
-                char c;
-                switch (this.position[t.to1D(m,n)]){
-                    case ChessChallenge.KING :
-                        c ='K';
-                        break;
-                    case ChessChallenge.QUEEN :
-                        c ='Q';
-                        break;
-                    case ChessChallenge.BISHOP :
-                        c ='B';
-                        break;
-                    case ChessChallenge.ROOK :
-                        c ='R';
-                        break;
-                    case ChessChallenge.KNIGHT :
-                        c ='N';
-                        break;
-                    default:
-                        c = '0';
-                        break;
-                }
+
+                char c = this.position[t.to1D(m,n)].toChar();
+
 
                 b.append(c);
                 b.append('\t');
@@ -234,7 +218,7 @@ public class ChessBoard {
      */
     public List<Placement> possibleMoves() {
         List<Placement> placements = new ArrayList<Placement>();
-        int nextPiece = pieces.get(pieceIndex);
+        Piece nextPiece = pieces.get(pieceIndex);
         int start = 0;
         if(current != null && nextPiece == current.piece)
             start = t.to1D(current.position);
@@ -309,7 +293,7 @@ public class ChessBoard {
         Position piecePos = placement.getPosition();
 
         pieceIndex --;
-        position[t.to1D(piecePos.m,piecePos.n)] = 0;
+        position[t.to1D(piecePos.m,piecePos.n)] = Piece.EMPTY;
         piecesInColumn[piecePos.n] --;
         piecesInLine[piecePos.m] --;
 

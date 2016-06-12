@@ -1,3 +1,5 @@
+package com.valente;
+
 /**
  * Created by uq4n on 01/06/2016.
  */
@@ -6,6 +8,6 @@ public interface PieceService {
     int[] getThreatenedLines(Position piecePos);
     int[] getThreatenedColumns(Position piecePos);
     boolean markDiagonals();
-    int getType();
+    Piece getType();
     boolean canPlace(Placement p, ChessBoard chessBoard);
 }
