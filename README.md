@@ -1,1 +1,4 @@
 # chess-challenge
+
+gradle run
+

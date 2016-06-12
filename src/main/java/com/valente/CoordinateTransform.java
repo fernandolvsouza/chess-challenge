@@ -1,7 +1,7 @@
 package com.valente;
 
 /**
- * Created by uq4n on 02/06/2016.
+ * Created by fernandolvsouza on 02/06/2016.
  */
 public class CoordinateTransform {
     private int M;

@@ -2,24 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eb5e68c-f06d-4f65-ad0f-63b7a76bb474" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/valente/Piece.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/BishopService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/BishopService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ChessBoard.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/ChessChallenge.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/CoordinateTransform.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/CoordinateTransform.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/KingService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/KingService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/KnightService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/KnightService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/PieceService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/PieceService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/PieceServiceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/PieceServiceProvider.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Placement.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/Placement.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Position.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/Position.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/QueenService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/QueenService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/RookService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/RookService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/groovy/ChessChallengeSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/groovy/CoordinateTransformSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/CoordinateTransformSpec.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/chess-challenge_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/chess-challenge_main.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/chess-challenge_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/chess-challenge_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/BishopService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/BishopService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/CoordinateTransform.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/CoordinateTransform.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/KingService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/KingService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/KnightService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/KnightService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/Piece.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/Piece.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/PieceService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/PieceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/PieceServiceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/PieceServiceProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/Placement.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/Placement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/Position.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/Position.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/QueenService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/QueenService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/valente/RookService.java" afterPath="$PROJECT_DIR$/src/main/java/com/valente/RookService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/groovy/com/valente/CoordinateTransformSpec.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/com/valente/CoordinateTransformSpec.groovy" />
     </list>
     <ignored path="chess-challenge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +54,18 @@
           <activation />
         </task>
         <projects_view>
-          <tree_state />
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="chess-challenge" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
         </projects_view>
       </state>
     </system>
@@ -64,10 +78,12 @@
       <file leaf-file-name="ChessBoard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
+            <state relative-caret-position="90">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3933#3934#0" expanded="true" />
+                <element signature="e#3992#3993#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,12 +92,9 @@
       <file leaf-file-name="KingService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/KingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="465">
               <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-              <folding>
-                <element signature="e#1076#1077#0" expanded="true" />
-                <element signature="e#1109#1110#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,22 +102,29 @@
       <file leaf-file-name="ChessChallengeSpec.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
+            <state relative-caret-position="261">
               <caret line="42" column="168" selection-start-line="42" selection-start-column="114" selection-end-line="42" selection-end-column="168" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Piece.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/Piece.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-              <folding>
-                <element signature="e#170#171#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,40 +132,42 @@
       <file leaf-file-name="KnightService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/KnightService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+            <state relative-caret-position="45">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="29" />
               <folding>
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PieceService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/PieceService.java">
+      <file leaf-file-name="BishopService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/BishopService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+            <state relative-caret-position="285">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChessChallenge.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChessChallenge.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
-              <folding>
-                <element signature="e#284#291#0" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
-                <element signature="e#1439#1440#0" expanded="true" />
-                <element signature="e#1519#1520#0" expanded="true" />
-                <element signature="e#2462#2463#0" expanded="true" />
-                <element signature="e#2500#2501#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -215,9 +237,18 @@
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="solveChess" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles main classes." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs this project as a JVM application" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="run" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Generates Gradle wrapper files. [incubating]" />
@@ -233,6 +264,11 @@
                 <option name="description" value="Generates Javadoc API documentation for the main source code." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Creates OS specific scripts to run the project as a JVM application." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="startScripts" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Compiles the test Groovy source." />
@@ -255,6 +291,11 @@
                 <option name="name" value="compileGroovy" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Installs the project as a distribution as-is." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installDist" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Processes main resources." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="processResources" />
@@ -263,6 +304,11 @@
                 <option name="description" value="Displays the tasks runnable from root project 'chess-challenge'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the main distributions" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assembleDist" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Initializes a new Gradle build. [incubating]" />
@@ -310,6 +356,11 @@
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Installs the project as a JVM application along with libs and OS specific scripts." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installApp" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays all dependencies declared in root project 'chess-challenge'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
@@ -335,6 +386,16 @@
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Bundles the project as a distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="distTar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Bundles the project as a distribution." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="distZip" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of root project 'chess-challenge'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
@@ -346,7 +407,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2929062157000" />
+        <entry key="$PROJECT_DIR$" value="2930287951000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -442,7 +503,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/King.java" />
         <option value="$PROJECT_DIR$/src/main/java/ChessTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/Position.java" />
@@ -465,12 +525,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/valente/PieceServiceProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/valente/RookService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/valente/Placement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valente/BishopService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/valente/QueenService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/valente/Piece.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java" />
         <option value="$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/valente/BishopService.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1225,7 +1287,7 @@
       <workItem from="1464656630704" duration="13531000" />
       <workItem from="1464826041920" duration="12450000" />
       <workItem from="1464917764077" duration="1556000" />
-      <workItem from="1465748713911" duration="6372000" />
+      <workItem from="1465748713911" duration="9669000" />
     </task>
     <servers />
   </component>
@@ -1262,10 +1324,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62745000" />
+    <option name="totallyTimeSpent" value="66042000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="979" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="979" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1276,7 +1338,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36076662" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36076662" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1284,7 +1346,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32807216" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29114583" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29073483" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1331,6 +1393,8 @@
           <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3933#3934#0" expanded="true" />
+            <element signature="e#3992#3993#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1339,15 +1403,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#284#291#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
-            <element signature="e#2500#2501#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1364,8 +1420,8 @@
         <state relative-caret-position="360">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
           <folding>
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1383,8 +1439,8 @@
         <state relative-caret-position="285">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1395,6 +1451,8 @@
           <caret line="210" column="61" selection-start-line="210" selection-start-column="61" selection-end-line="210" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3933#3934#0" expanded="true" />
+            <element signature="e#3992#3993#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1411,15 +1469,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="40" column="10" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="10" />
-          <folding>
-            <element signature="e#284#291#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
-            <element signature="e#2500#2501#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1436,8 +1486,8 @@
         <state relative-caret-position="360">
           <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="21" />
           <folding>
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1455,8 +1505,8 @@
         <state relative-caret-position="315">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="false" />
+            <element signature="e#721#722#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1467,6 +1517,8 @@
           <caret line="80" column="6" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3933#3934#0" expanded="true" />
+            <element signature="e#3992#3993#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1483,15 +1535,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-          <folding>
-            <element signature="e#284#291#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
-            <element signature="e#2500#2501#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1554,21 +1598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/CoordinateTransform.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1609,41 +1638,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/BishopService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/Piece.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-          <folding>
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/PieceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/KnightService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding>
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1652,8 +1651,8 @@
         <state relative-caret-position="270">
           <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
           <folding>
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="false" />
+            <element signature="e#604#605#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1663,29 +1662,8 @@
         <state relative-caret-position="285">
           <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
           <folding>
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/KingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-          <folding>
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="false" />
+            <element signature="e#606#607#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1698,27 +1676,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="42" column="168" selection-start-line="42" selection-start-column="114" selection-end-line="42" selection-end-column="168" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-2.9-bin/ebaspjjvvkuki3ldbldx7hexd/gradle-2.9/lib/gradle-core-2.9.jar!/org/gradle/api/tasks/JavaExec.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/ChessBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3933#3934#0" expanded="true" />
+            <element signature="e#3992#3993#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/ChessChallenge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="100" column="46" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
+        <state relative-caret-position="75">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/PieceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/BishopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/KnightService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="29" />
           <folding>
-            <element signature="e#284#291#0" expanded="true" />
-            <element signature="e#653#654#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
-            <element signature="e#2500#2501#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/valente/KingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/groovy/com/valente/ChessChallengeSpec.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="42" column="168" selection-start-line="42" selection-start-column="114" selection-end-line="42" selection-end-column="168" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

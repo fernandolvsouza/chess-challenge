@@ -1,7 +1,7 @@
 package com.valente;
 
 /**
- * Created by flvs on 6/12/16.
+ * Created by fernandolvsouza on 6/12/16.
  */
 public enum Piece {
     QUEEN, BISHOP, ROOK, KNIGHT, KING, EMPTY;

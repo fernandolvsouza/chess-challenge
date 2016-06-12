@@ -1,7 +1,7 @@
 package com.valente;
 
 /**
- * Created by flvs on 5/30/16.
+ * Created by fernandolvsouza on 5/30/16.
  */
 public class Placement {
     Piece piece ;

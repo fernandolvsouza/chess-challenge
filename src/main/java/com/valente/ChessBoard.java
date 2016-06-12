@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by flvs on 5/29/16.
+ * Created by fernandolvsouza on 5/29/16.
  */
 public class ChessBoard {
 
@@ -194,21 +194,19 @@ public class ChessBoard {
     @Override
     public String toString(){
         StringBuilder b =  new StringBuilder();
-        for (int m = 0; m < M; m++) {
-            for (int n = 0; n < N; n++) {
+        for (int i = 0; i < M * N; i++) {
+            char c = this.position[i].toChar();
+            b.append(c);
+            b.append(' ');
 
-                char c = this.position[t.to1D(m,n)].toChar();
-
-
-                b.append(c);
-                b.append('\t');
-            }
             /*b.append("\t\t");
             for (int n = 0; n < N; n++) {
                 b.append(this.positionsThreatened[t.to1D(m,n)]);
                 b.append('\t');
             }*/
-            b.append('\n');
+
+            if(t.to2D(i).n  == N - 1)
+                b.append('\n');
         }
         return b.toString();
     }

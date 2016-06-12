@@ -1,7 +1,7 @@
 package com.valente;
 
 /**
- * Created by uq4n on 01/06/2016.
+ * Created by fernandolvsouza on 01/06/2016.
  */
 public class KnightService implements PieceService{
     public Position[] getThreatenedPositions(Position piecePos) {

@@ -1,6 +1,6 @@
 package com.valente
 /**
- * Created by flvs on 5/29/16.
+ * Created by fernandolvsouza on 5/29/16.
  */
 
 import com.valente.ChessChallenge

@@ -1,11 +1,13 @@
 package com.valente;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.List;
 
 /**
- * Created by flvs on 5/29/16.
+ * Created by fernandolvsouza on 5/29/16.
  */
 public class ChessChallenge {
 
@@ -15,6 +17,9 @@ public class ChessChallenge {
     private List<Piece> pieces = new ArrayList<Piece>();
     private final PieceComparator pieceComparator = new PieceComparator();
     private boolean showBoards = false;
+    private BufferedWriter output;
+
+
 
     class PieceComparator implements Comparator<Piece> {
 
@@ -61,21 +66,34 @@ public class ChessChallenge {
     }
 
 
-    public ChessChallenge(int M, int N) {
+    public ChessChallenge(int M, int N) throws FileNotFoundException {
+
         board = new ChessBoard(M,N,pieces, new CoordinateTransform(M,N));
     }
 
-    public int solve() {
+    public int solve() throws IOException {
+        final long startTime = System.currentTimeMillis();
+
+        output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("output.txt")));
         search(board);
+        System.out.println("Result: " + countResult );
+        output.flush();
+        output.close();
+
+        final long endTime = System.currentTimeMillis();
+        final long duration = endTime - startTime;
+        System.out.println("Time took to process and write to output file (output.txt): " + duration / 1000 + " seconds "  );
+
         return countResult;
     }
 
-    private void search( ChessBoard board ){
+    private void search( ChessBoard board ) throws IOException {
 
         if(board.isComplete()) {
-            if(showBoards)
-                System.out.println(board.toString());
-            //System.out.print(board.isComplete() + "\n\n");
+            if(showBoards) {
+                output.append(board.toString());
+                output.append('\n');
+            }
             countResult++;
             return;
         }
@@ -89,7 +107,7 @@ public class ChessChallenge {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         ChessChallenge c = new ChessChallenge(7,7);
         c.addKings(2);
         c.addQueens(2);
@@ -97,8 +115,7 @@ public class ChessChallenge {
         c.addKnights(1);
         c.showBoardsOn();
 
-        int result = c.solve();
-        System.out.println("result: " + result);
+        c.solve();
 
     }
 
