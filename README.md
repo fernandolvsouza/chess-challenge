@@ -7,6 +7,8 @@ To solve the problem for 2 kings, 2 queens, 1 knights, 2 bishops, run the follow
 ```bash
 ./gradle run
 ```
+Find the possible configurations in the file output.txt.
+
 To use run others configuration use follow the example below:
 
 ```groovy
