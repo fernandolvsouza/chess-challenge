@@ -9,17 +9,14 @@ import java.util.List;
 public class ChessBoard {
 
     private int M, N;
-
     private Piece[] position;
-
     private int[] positionsThreatened;
-
     private int pieceIndex = 0;
-
     private List<Piece> pieces;
     private Placement current;
     private int[] threatenedLines;
     private int[] threatenedColumns;
+
     private int[] piecesInLine;
     private int[] piecesInColumn;
     private int[] threatenedDiagonalBottomUp;
@@ -27,7 +24,10 @@ public class ChessBoard {
     private int[] piecesInDiagonalBottomUp;
     private int[] piecesInDiagonalUpBottom;
     private CoordinateTransform t;
-    public ChessBoard(int M, int N, List<Piece> pieces, CoordinateTransform t) {
+    private PieceServiceProvider pieceServiceprovider;
+
+    public ChessBoard(int M, int N, List<Piece> pieces, CoordinateTransform t, PieceServiceProvider pieceServiceprovider) {
+        this.pieceServiceprovider = pieceServiceprovider;
         this.t = t;
         this.M = M;
         this.N = N;
@@ -65,12 +65,10 @@ public class ChessBoard {
             this.threatenedDiagonalBottomUp[d] = 0;
             this.threatenedDiagonalUpBottom[d] = 0;
         }
-
-
     }
 
     /**
-     * Methods for mark and unmark positions as Threatened
+     * Methods for mark positions as Threatened
      */
 
     private void markPositionAsThreatened(int m, int n) {
@@ -82,6 +80,10 @@ public class ChessBoard {
         markPositionAsThreatened(p.m,p.n);
     }
 
+    /**
+     * Methods for unmark positions as Threatened
+     */
+
     private void unMarkPositionAsThreatened(int m, int n) {
         if (inBound(m, n))
             positionsThreatened[t.to1D(m,n)] --;
@@ -91,20 +93,36 @@ public class ChessBoard {
         unMarkPositionAsThreatened(p.m,p.n);
     }
 
+    /**
+     * Method for mark diagonal as Threatened
+     */
+
     private void markDiagonalAsThreatened(Position position){
         threatenedDiagonalBottomUp[ position.m + position.n ] ++;
         threatenedDiagonalUpBottom[ position.m - position.n + M -1] ++;
     }
+
+    /**
+     * Method for unmark diagonal as Threatened
+     */
 
     private void unMarkDiagonalAsThreatened(Position position){
         threatenedDiagonalBottomUp[ position.m + position.n ] --;
         threatenedDiagonalUpBottom[ position.m - position.n + M -1] --;
     }
 
+    /**
+     * Method for increase piece counter in diagonals
+     */
+
     private void markDiagonalHasPiece(Position position){
         piecesInDiagonalBottomUp[ position.m + position.n ] ++;
         piecesInDiagonalUpBottom[ position.m - position.n + M -1] ++;
     }
+
+    /**
+     * Method for decrease piece counter in diagonals
+     */
 
     private void unMarkDiagonalHasPiece(Position position){
         piecesInDiagonalBottomUp[ position.m + position.n ] --;
@@ -113,8 +131,8 @@ public class ChessBoard {
 
 
     /**
-    * Auxiliary methods for verify position status
-    */
+     * Method that verifies if position exists and is empty
+     */
 
     public  boolean isPositionEmptyOrOutOfBound(Position p ) {
         return isPositionEmptyOrOutOfBound(p.m,p.n);
@@ -127,34 +145,59 @@ public class ChessBoard {
         return isPositionEmpty(m, n);
     }
 
+    /**
+     * Method that verifies if position exists
+     */
+
     private boolean inBound(int m, int n) {
         return m > -1 && m < M && n > -1 && n < N;
     }
 
+    /**
+     * Method that verifies if position is empty
+     */
     private boolean isPositionEmpty(int m, int n) {
         return position[t.to1D(m,n)] == Piece.EMPTY;
     }
 
+    /**
+     * Method that verifies if column is threatened
+     */
     private boolean isColumnThreatened(int n) {
         return threatenedColumns[n] > 0;
     }
 
+    /**
+     * Method that verifies if line is threatened
+     */
     private boolean isLineThreatened(int m) {
         return threatenedLines[m] > 0;
     }
 
+    /**
+     * Method that verifies if all pieces are placed on the board
+     */
     public boolean isComplete() {
         return this.pieces.size()  == pieceIndex;
     }
 
+    /**
+     * Method that verifies if column has a least one piece
+     */
     public boolean hasPieceInColumn(int n){
         return piecesInColumn[n] > 0;
     }
 
+    /**
+     * Method that verifies if line has a least one piece
+     */
     public boolean hasPieceInLine(int m){
         return piecesInLine[m] > 0;
     }
 
+    /**
+     * Method that verifies if position is threatened
+     */
     private boolean isPositionThreatened(Position p) {
         return isPositionThreatened(p.m,p.n);
     }
@@ -163,11 +206,17 @@ public class ChessBoard {
         return positionsThreatened[t.to1D(m,n)] > 0;
     }
 
+    /**
+     * Method that verifies if diagonals of position have at least one piece
+     */
     public boolean hasPieceInDiagonals(Position position){
         return piecesInDiagonalBottomUp[ position.m + position.n ] > 0
                  || piecesInDiagonalUpBottom[ position.m - position.n + M - 1] > 0;
     }
 
+    /**
+     * Method that verifies if diagonals of position are threatened
+     */
     private boolean isAnyDiagonalThreatened(Position position){
         return threatenedDiagonalBottomUp[ position.m + position.n ] > 0
                 || threatenedDiagonalUpBottom[ position.m - position.n + M - 1 ] > 0;
@@ -178,7 +227,7 @@ public class ChessBoard {
      */
     public ChessBoard cloneBoard() {
 
-        ChessBoard clone = new ChessBoard(this.M, this.N,this.pieces,this.t);
+        ChessBoard clone = new ChessBoard(this.M, this.N,this.pieces,this.t, this.pieceServiceprovider);
 
         for (int m = 0; m < M; m++)
             for (int n = 0; n < N; n++)
@@ -212,14 +261,16 @@ public class ChessBoard {
     }
 
     /**
-     * Method that calculate the next moves
+     * Method that search for the next moves
      */
     public List<Placement> possibleMoves() {
         List<Placement> placements = new ArrayList<Placement>();
         Piece nextPiece = pieces.get(pieceIndex);
+
         int start = 0;
         if(current != null && nextPiece == current.piece)
             start = t.to1D(current.position);
+
         for (int i = start ; i < M * N; i++){
             Placement p = new Placement(t.to2D(i),nextPiece);
             if (canPlace(p)) {
@@ -229,6 +280,10 @@ public class ChessBoard {
         return placements;
     }
 
+
+    /**
+     * Method that return if placement can be done
+     */
     private boolean canPlace(Placement p) {//int piece, int m, int n) {
         int m = p.position.m;
         int n = p.position.n;
@@ -249,12 +304,15 @@ public class ChessBoard {
             return false;
 
 
-        PieceService service = PieceServiceProvider.getService(p.piece);
+        PieceService service = pieceServiceprovider.getService(p.piece);
         return service.canPlace(p.position,this);
     }
 
+    /**
+     * Method that puts the piece on specific position
+     */
     public void putPiece(Placement placement) {
-        PieceService service = PieceServiceProvider.getService(placement.piece);
+        PieceService service = pieceServiceprovider.getService(placement.piece);
         Position piecePos = placement.getPosition();
 
         pieceIndex ++;
@@ -286,8 +344,11 @@ public class ChessBoard {
 
     }
 
+    /**
+     * Method that removes the piece on specific position
+     */
     public void removePiece(Placement placement) {
-        PieceService service = PieceServiceProvider.getService(placement.piece);
+        PieceService service = pieceServiceprovider.getService(placement.piece);
         Position piecePos = placement.getPosition();
 
         pieceIndex --;
