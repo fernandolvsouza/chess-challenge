@@ -3,7 +3,6 @@ package com.valente
  * Created by fernandolvsouza on 5/29/16.
  */
 
-import com.valente.ChessChallenge
 import spock.lang.*
 
 class ChessChallengeSpec extends Specification {
